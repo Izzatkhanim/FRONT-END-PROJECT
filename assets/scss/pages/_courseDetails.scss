@@ -4,6 +4,7 @@ main {
         background-color: white !important;
     }
     #course-detail {
+        margin-bottom: 100px;
         margin-top: 100px;
         .detail-box {
             .detail-zad {
@@ -206,9 +207,7 @@ main {
                             }
                             .card {
                                 position: relative;
-                                display: -ms-flexbox;
                                 display: flex;
-                                -ms-flex-direction: column;
                                 flex-direction: column;
                                 min-width: 0;
                                 word-wrap: break-word;
@@ -396,6 +395,148 @@ main {
                 }
             }
         }
+        .heading {
+            margin-top: 50px;
+            h6 {
+                font-size: 24px;
+                font-weight: 600;
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+        .card {
+            width: 100%;
+            background-color: #fff;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            .card-img {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                overflow: hidden;
+                .card-img-top {
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .card-content {
+                .content-title {
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 600;
+                    a {
+                        text-decoration: none;
+                        color: $header-color;
+                        &:hover {
+                            color: $darken-orange-color;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+                p {
+                    margin-left: 17px;
+                    justify-content: left;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $secondary-color;
+                }
+            }
+        }
+        .courses-info {
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            .rating-stars {
+                float: left;
+                margin-left: 17px;
+                i {
+                    color: #ffc600;
+                    font-size: 12px;
+                    line-height: normal;
+                }
+            }
+        }
+        .content-likes {
+            width: auto;
+            margin-left: 140px;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+            li {
+                float: left;
+                padding-right: 15px;
+                font-size: 15px;
+                a {
+                    font-weight: 300;
+                    text-decoration: none;
+                    color: #292b2c;
+                    &:hover {
+                        color: $darken-orange-color;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+        .content-footer {
+            border-top: 1px solid #ddd;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            padding: 15px;
+            width: 100%;
+            .teacher {
+                a {
+                    text-decoration: none;
+                    img {
+                        border-radius: 100%;
+                        max-width: 40px;
+                        margin-right: 10px;
+                    }
+                    span {
+                        color: #292b2c;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        &:hover {
+                            color: $darken-orange-color;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+            .price {
+                float: right;
+                span {
+                    margin: 0;
+                    padding: 5px 15px;
+                    display: block;
+                    color: $dark-success-color;
+                    background-color: $light-succsess-color;
+                    border-color: #c3e6cb;
+                }
+                .paid {
+                    border: 1px solid #bee5eb;
+                    color: $darken-sea-color;
+                    background-color: $ligter-sea-color;
+                }
+            }
+        }
+        .all-courses {
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+            a {
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
         .sidebar {
             .form-inline {
                 .form-group {
@@ -421,8 +562,6 @@ main {
             }
             .widget {
                 margin-top: 30px;
-                margin-bottom: 15px;
-                padding-bottom: 15px;
                 .widget-title {
                     position: relative;
                     padding-bottom: 15px;
@@ -535,6 +674,7 @@ main {
                 }
             }
             .widget-tags {
+                margin-top: 0;
                 .tags {
                     margin-top: 20px;
                     a {

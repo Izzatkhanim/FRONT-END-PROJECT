@@ -572,6 +572,7 @@ main #our-courses .card {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  max-width: 420px;
 }
 
 main #our-courses .card .card-img {
@@ -2484,6 +2485,7 @@ main .active {
 }
 
 main #course-detail {
+  margin-bottom: 100px;
   margin-top: 100px;
 }
 
@@ -2730,12 +2732,12 @@ main #course-detail .detail-box .course_tabs .tab-content .tab-pane #accordion .
 
 main #course-detail .detail-box .course_tabs .tab-content .tab-pane #accordion .card {
   position: relative;
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -2947,6 +2949,185 @@ main #course-detail .detail-box .course_tabs .tab-content .border .review_form .
           box-shadow: none;
 }
 
+main #course-detail .heading {
+  margin-top: 50px;
+}
+
+main #course-detail .heading h6 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+main #course-detail .card {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+main #course-detail .card .card-img {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+}
+
+main #course-detail .card .card-img .card-img-top {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+main #course-detail .card .card-img .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main #course-detail .card .card-content .content-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+}
+
+main #course-detail .card .card-content .content-title a {
+  text-decoration: none;
+  color: #292b2c;
+}
+
+main #course-detail .card .card-content .content-title a:hover {
+  color: #DF9C00;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #course-detail .card .card-content p {
+  margin-left: 17px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888888;
+}
+
+main #course-detail .courses-info {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+main #course-detail .courses-info .rating-stars {
+  float: left;
+  margin-left: 17px;
+}
+
+main #course-detail .courses-info .rating-stars i {
+  color: #ffc600;
+  font-size: 12px;
+  line-height: normal;
+}
+
+main #course-detail .content-likes {
+  width: auto;
+  margin-left: 140px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main #course-detail .content-likes li {
+  float: left;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+main #course-detail .content-likes li a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #292b2c;
+}
+
+main #course-detail .content-likes li a:hover {
+  color: #DF9C00;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #course-detail .content-footer {
+  border-top: 1px solid #ddd;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+}
+
+main #course-detail .content-footer .teacher a {
+  text-decoration: none;
+}
+
+main #course-detail .content-footer .teacher a img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+main #course-detail .content-footer .teacher a span {
+  color: #292b2c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+main #course-detail .content-footer .teacher a span:hover {
+  color: #DF9C00;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #course-detail .content-footer .price {
+  float: right;
+}
+
+main #course-detail .content-footer .price span {
+  margin: 0;
+  padding: 5px 15px;
+  display: block;
+  color: #165825;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+main #course-detail .content-footer .price .paid {
+  border: 1px solid #bee5eb;
+  color: #236671;
+  background-color: #d1ecf1;
+}
+
+main #course-detail .all-courses {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+main #course-detail .all-courses a span {
+  font-size: 20px;
+}
+
 main #course-detail .sidebar .form-inline .form-group input {
   margin-left: 0 !important;
   display: inline-block;
@@ -2971,8 +3152,6 @@ main #course-detail .sidebar .form-inline .form-group i:hover {
 
 main #course-detail .sidebar .widget {
   margin-top: 30px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
 }
 
 main #course-detail .sidebar .widget .widget-title {
@@ -3088,6 +3267,10 @@ main #course-detail .sidebar .widget-recent-post .recent-post li .post-footer .p
   font-size: 80%;
   color: #888888;
   font-family: "Roboto", sans-serif;
+}
+
+main #course-detail .sidebar .widget-tags {
+  margin-top: 0;
 }
 
 main #course-detail .sidebar .widget-tags .tags {
