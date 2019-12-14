@@ -2634,64 +2634,6 @@ footer #footer-bottom ul a:hover {
   color: #FFBC09;
 }
 
-#course-detail .detail-box .course-tabs .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
-}
-
-#course-detail .detail-box .course-tabs .nav-tabs .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-#course-detail .detail-box .course-tabs .nav-tabs .nav-items {
-  margin-right: 20px;
-  margin-bottom: -1px;
-}
-
-#course-detail .detail-box .course-tabs .tab-content {
-  background-color: white;
-  margin-top: 20px;
-}
-
-#course-detail .detail-box .course-tabs .tab-content .tab-content > .active {
-  display: block;
-}
-
-#course-detail .detail-box .course-tabs .tab-content .tab-content > .tab-pane {
-  display: none;
-}
-
-#course-detail .detail-box .course-tabs .tab-content .fade {
-  -webkit-transition: opacity .15s linear;
-  transition: opacity .15s linear;
-}
-
-#course-detail .detail-box .course-tabs .tab-content .tab_box {
-  padding: 15px;
-}
-
-#course-detail .detail-box .course-tabs .tab-content .radius_all_5 {
-  border-radius: 5px;
-}
-
-#course-detail .detail-box .course-tabs .tab-content .border {
-  border: 1px solid #dee2e6 !important;
-}
-
-#course-detail .detail-box .course-tabs .tab-content p {
-  color: #888888;
-}
-
-#course-detail .detail-box .course-tabs .tab-content p p:last-child {
-  margin: 0;
-}
-
 #course-detail .detail-box .sidebar .form-inline .form-group input {
   margin-left: 0 !important;
   display: inline-block;
