@@ -1,300 +1,556 @@
 // COURSE DETAILS
 main {
+    .active {
+        background-color: white !important;
+    }
     #course-detail {
         margin-top: 100px;
         .detail-box {
-            background-color: #fff3cd;
-            overflow: hidden;
-            .detail-img {
-                position: relative;
-                a {
-                    text-decoration: none;
+            .detail-zad {
+                background-color: #fff3cd;
+                overflow: hidden;
+                .detail-img {
+                    position: relative;
+                    a {
+                        text-decoration: none;
+                    }
                 }
-            }
-            .price-detail {
-                color: #155724;
-                background-color: #d4edda;
-                border-color: #c3e6cb;
-                bottom: 30px;
-                left: 25px;
-                position: absolute;
-                padding: 5px 15px;
-                border-radius: 5px;
-                .price {
-                    font-weight: 300;
-                    span {
+                .price-detail {
+                    color: #155724;
+                    background-color: #d4edda;
+                    border-color: #c3e6cb;
+                    bottom: 30px;
+                    left: 25px;
+                    position: absolute;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    .price {
+                        font-weight: 300;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .enroll-btn {
+                    right: 25px;
+                    position: absolute;
+                    bottom: 30px;
+                    a {
+                        font-weight: 300;
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                }
+                .detail-content {
+                    position: relative;
+                    margin: 20px;
+                    h2 {
+                        font-size: 24px;
                         font-weight: 600;
                     }
-                }
-            }
-            .enroll-btn {
-                right: 25px;
-                position: absolute;
-                bottom: 30px;
-                a {
-                    font-weight: 300;
-                    font-size: 14px;
-                    text-decoration: none;
-                }
-            }
-            .detail-content {
-                position: relative;
-                margin: 20px;
-                h2 {
-                    font-size: 24px;
-                    font-weight: 600;
-                }
-                .head-line {
-                    background-color: #dad1b9;
-                    height: 1px;
-                    width: 790px;
-                    position: absolute;
-                    top: 43px;
-                    right: -1px;
-                }
-            }
-            .detail-foot {
-                ul {
-                    margin-top: 30px;
-                    list-style-type: none;
-                    display: flex;
-                    li {
-                        .line {
-                            background-color: #dad1b9;
-                            box-sizing: border-box;
-                            height: 50px;
-                            width: 1px;
-                            margin-left: 15px;
-                            margin-right: 15px;
-                        }
-                        display: flex;
-                        .instructor {
-                            img {
-                                margin-left: 20px;
-                                border-radius: 5px;
-                                float: left;
-                                margin-right: 10px;
-                                max-width: 50px;
-                                width: 100%;
-                            }
-                        }
-                        .instructor-info {
-                            span {
-                                display: flex;
-                                font-weight: 600;
-                            }
-                            a {
-                                font-family: "Roboto", sans-serif;
-                                color: black;
-                                text-decoration: none;
-                                font-weight: 300;
-                                &:hover {
-                                    transition: all 0.5s;
-                                    color: $orange-color;
-                                }
-                            }
-                        }
-                        .course-cat {
-                            span {
-                                display: flex;
-                                font-weight: 600;
-                            }
-                            a {
-                                color: black;
-                                text-decoration: none;
-                                font-weight: 300;
-                                font-weight: 300;
-                                &:hover {
-                                    transition: all 0.5s;
-                                    color: $orange-color;
-                                }
-                            }
-                        }
-                        .course-students {
-                            span {
-                                font-weight: 600;
-                            }
-                            p {
-                                font-weight: 300;
-                            }
-                        }
-                        .course-review {
-                            span {
-                                font-weight: 600;
-                            }
-                            .rating-stars {
-                                i {
-                                    font-size: 12px;
-                                    color: $orange-color;
-                                }
-                            }
-                        }
+                    .head-line {
+                        background-color: #dad1b9;
+                        height: 1px;
+                        width: 790px;
+                        position: absolute;
+                        top: 43px;
+                        right: -1px;
                     }
                 }
-            }
-            .sidebar {
-                .form-inline {
-                    .form-group {
-                        input {
-                            margin-left: 0 !important;
-                            display: inline-block;
-                            width: 250px;
-                            vertical-align: middle;
-                            height: 47px;
-                            position: relative;
-                        }
-                        i {
-                            cursor: pointer;
-                            position: absolute;
-                            right: 20px;
-                            font-size: 18px;
-                            &:hover {
-                                transition: all 0.5s;
-                                color: $orange-color;
-                            }
-                        }
-                    }
-                }
-                .widget {
-                    margin-top: 30px;
-                    margin-bottom: 15px;
-                    padding-bottom: 15px;
-                    .widget-title {
-                        position: relative;
-                        padding-bottom: 15px;
-                        &::before {
-                            background-color: #ffbc09;
-                            bottom: 0;
-                            content: "";
-                            height: 3px;
-                            left: 0;
-                            position: absolute;
-                            width: 80px;
-                            z-index: 1;
-                        }
-                        &::after {
-                            background-color: #ddd;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            height: 1px;
-                            bottom: 0;
-                            width: 100%;
-                            content: "";
-                            z-index: 0;
-                        }
-                    }
+                .detail-foot {
                     ul {
-                        margin-top: 20px;
-                        padding: 0;
-                        list-style: none;
+                        margin-top: 30px;
+                        list-style-type: none;
+                        display: flex;
                         li {
-                            display: inline-block;
-                            width: 100%;
-                            margin-bottom: 12px;
-                            list-style: none;
-                            .post-footer {
-                                .post-img {
+                            .line {
+                                background-color: #dad1b9;
+                                box-sizing: border-box;
+                                height: 50px;
+                                width: 1px;
+                                margin-left: 15px;
+                                margin-right: 15px;
+                            }
+                            display: flex;
+                            .instructor {
+                                img {
+                                    margin-left: 20px;
+                                    border-radius: 5px;
                                     float: left;
                                     margin-right: 10px;
-                                    max-width: 60px;
+                                    max-width: 50px;
+                                    width: 100%;
+                                }
+                            }
+                            .instructor-info {
+                                span {
+                                    display: flex;
+                                    font-weight: 600;
+                                }
+                                a {
+                                    font-family: "Roboto", sans-serif;
+                                    color: black;
+                                    text-decoration: none;
+                                    font-weight: 300;
+                                    &:hover {
+                                        transition: all 0.5s;
+                                        color: $orange-color;
+                                    }
+                                }
+                            }
+                            .course-cat {
+                                span {
+                                    display: flex;
+                                    font-weight: 600;
+                                }
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                    font-weight: 300;
+                                    font-weight: 300;
+                                    &:hover {
+                                        transition: all 0.5s;
+                                        color: $orange-color;
+                                    }
+                                }
+                            }
+                            .course-students {
+                                span {
+                                    font-weight: 600;
+                                }
+                                p {
+                                    font-weight: 300;
+                                }
+                            }
+                            .course-review {
+                                span {
+                                    font-weight: 600;
+                                }
+                                .rating-stars {
+                                    i {
+                                        font-size: 12px;
+                                        color: $orange-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .course_tabs {
+                margin-top: 50px;
+                .nav-tabs {
+                    border-bottom: 1px solid #dee2e6;
+                }
+                .nav {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    li {
+                        margin-right: 20px;
+                        margin-bottom: -1px;
+                        .nav-link {
+                            border: none;
+                            background-color: white;
+                            text-decoration: none;
+                            color: $header-color;
+                        }
+                        .nav-link.active {
+                            color: #FFBC09 !important;
+                            background-color: white !important;
+                            border-bottom: 3px solid #FFBC09;
+                        }
+                    }
+                }
+                .tab-content {
+                    margin-top: 20px;
+                    .tab-content>.active {
+                        display: block;
+                    }
+                    .tab-content>.tab-pane {
+                        display: none;
+                    }
+                    .fade {
+                        transition: opacity .15s linear;
+                    }
+                    .fade:not(.show) {
+                        opacity: 0;
+                    }
+                    .tab-pane {
+                        .tab_box {
+                            padding: 15px;
+                        }
+                        .radius_all_5 {
+                            border-radius: 5px;
+                        }
+                        .border {
+                            border: 1px solid #dee2e6!important;
+                            p {
+                                color: $secondary-color !important;
+                                text-align: left;
+                                font-weight: 300;
+                                margin-bottom: 0;
+                                line-height: 25px;
+                            }
+                        }
+                        #accordion {
+                            .accordion .card-header {
+                                padding: 0;
+                                background-color: transparent;
+                                border: 0;
+                                .card-header:first-child {
+                                    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+                                }
+                            }
+                            .card {
+                                position: relative;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                                min-width: 0;
+                                word-wrap: break-word;
+                                background-color: #fff;
+                                background-clip: border-box;
+                                border: 1px solid rgba(0, 0, 0, .125);
+                                border-radius: .25rem;
+                            }
+                            .accordion>.card {
+                                overflow: hidden;
+                            }
+                            .accordion>.card:first-of-type {
+                                border-bottom: 0;
+                                border-bottom-right-radius: 0;
+                                border-bottom-left-radius: 0;
+                            }
+                        }
+                        .course_author {
+                            background-color: #fff;
+                            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 10px;
+                            padding: 30px 30px 30px 50px;
+                            margin: 5px 5px 5px 50px;
+                            position: relative;
+                            z-index: 1;
+                            .author_img {
+                                margin-left: -100px;
+                                float: left;
+                                margin-right: 20px;
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                            .author_meta {
+                                overflow: hidden;
+                                .author_intro {
+                                    margin-bottom: 6px;
+                                    h6 {
+                                        color: #292b2c;
+                                        font-family: 'Rubik', sans-serif;
+                                    }
+                                    span {
+                                        font-style: italic;
+                                    }
+                                    .text_default {
+                                        color: #FFBC09 !important;
+                                    }
+                                }
+                                .author_desc {
+                                    p {
+                                        color: $secondary-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .course_rating {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        margin-bottom: 15px;
+                        .rating_review {
+                            width: 40%;
+                            text-align: center;
+                            background-color: #f5f5f5;
+                            padding: 20px;
+                            p {
+                                color: $secondary-color;
+                            }
+                            .rating_stars {
+                                i {
+                                    color: #ffc600;
+                                    font-size: 18px;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                        .rating_box {
+                            width: 60%;
+                            padding: 20px;
+                            .course_rate {
+                                margin-bottom: 10px;
+                                .review_bar {
+                                    margin-bottom: 10px;
+                                    .rating {
+                                        width: 90%;
+                                    }
+                                }
+                            }
+                        }
+                        .heading_s1 {
+                            h5 {
+                                margin-bottom: 1rem;
+                                color: #292b2c;
+                                font-family: 'Rubik', sans-serif;
+                            }
+                        }
+                        .list-none {
+                            li {
+                                list-style: none;
+                            }
+                            .comment_info {
+                                padding-top: 15px;
+                                margin-top: 15px;
+                                border-top: 1px solid #ddd;
+                                .d-flex {
+                                    display: flex !important;
+                                    .user_img {
+                                        img {
+                                            max-width: 100px;
+                                            margin-right: 15px;
+                                        }
+                                    }
+                                    .comment_content {
+                                        .meta_data {
+                                            margin-bottom: 6px;
+                                            h6 {
+                                                color: #292b2c;
+                                                font-family: 'Rubik', sans-serif;
+                                                a {
+                                                    color: #292b2c;
+                                                    text-decoration: none;
+                                                    transition: all 0.5s ease;
+                                                }
+                                            }
+                                            .comment-time {
+                                                font-size: 14px;
+                                                text-transform: capitalize;
+                                                color: #333;
+                                            }
+                                        }
+                                        .ml-auto {
+                                            margin-left: auto!important;
+                                            .rating_stars {
+                                                i {
+                                                    color: #ffc600;
+                                                    font-size: 18px;
+                                                    line-height: normal;
+                                                }
+                                            }
+                                        }
+                                        p {
+                                            color: $secondary-color;
+                                        }
+                                        .list_none li {
+                                            list-style: none;
+                                        }
+                                        .comment_info {
+                                            padding-top: 15px;
+                                            margin-top: 15px;
+                                            border-top: 1px solid #ddd;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .border {
+                        .review_form {
+                            h5 {
+                                color: #292b2c;
+                                font-family: 'Rubik', sans-serif;
+                                font-size: 1.25rem;
+                            }
+                            .form-group {
+                                margin-bottom: 1rem;
+                                .rating {
+                                    span {
+                                        cursor: pointer;
+                                        display: inline-block;
+                                    }
+                                }
+                                textarea.form-control {
+                                    height: auto;
+                                }
+                                .form-control {
+                                    height: 47px;
+                                    padding: 10px 20px;
+                                    color: #666666;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar {
+            .form-inline {
+                .form-group {
+                    input {
+                        margin-left: 0 !important;
+                        display: inline-block;
+                        width: 250px;
+                        vertical-align: middle;
+                        height: 47px;
+                        position: relative;
+                    }
+                    i {
+                        cursor: pointer;
+                        position: absolute;
+                        right: 35px;
+                        font-size: 18px;
+                        &:hover {
+                            transition: all 0.5s;
+                            color: $orange-color;
+                        }
+                    }
+                }
+            }
+            .widget {
+                margin-top: 30px;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                .widget-title {
+                    position: relative;
+                    padding-bottom: 15px;
+                    &::before {
+                        background-color: #ffbc09;
+                        bottom: 0;
+                        content: "";
+                        height: 3px;
+                        left: 0;
+                        position: absolute;
+                        width: 80px;
+                        z-index: 1;
+                    }
+                    &::after {
+                        background-color: #ddd;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        height: 1px;
+                        bottom: 0;
+                        width: 100%;
+                        content: "";
+                        z-index: 0;
+                    }
+                }
+                ul {
+                    margin-top: 20px;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        width: 100%;
+                        margin-bottom: 12px;
+                        list-style: none;
+                        .post-footer {
+                            .post-img {
+                                float: left;
+                                margin-right: 10px;
+                                max-width: 60px;
+                            }
+                            .post-content {
+                                overflow: hidden;
+                                h6 {
+                                    font-size: 14px;
+                                    line-height: normal;
+                                    margin-bottom: 5px;
+                                    font-weight: normal;
                                     a {
                                         color: #292b2c;
                                         text-decoration: none;
                                         transition: all 0.5s ease;
-                                        img {
-                                            max-width: 100%;
-                                        }
                                     }
                                 }
-                                .post-content {
-                                    overflow: hidden;
-                                    h6 {
-                                        font-size: 14px;
-                                        line-height: normal;
-                                        margin-bottom: 5px;
-                                        font-weight: normal;
-                                        a {
-                                            color: #292b2c;
-                                            text-decoration: none;
-                                            transition: all 0.5s ease;
-                                        }
-                                    }
-                                    .text-success {
-                                        color: #28a745 !important;
-                                    }
-                                    .small {
-                                        font-size: 80%;
-                                        font-weight: 400;
-                                    }
+                                .text-success {
+                                    color: #28a745 !important;
+                                }
+                                .small {
+                                    font-size: 80%;
+                                    font-weight: 400;
                                 }
                             }
                         }
                     }
                 }
-                .widget-categories {
-                    ul {
+            }
+            .widget-categories {
+                ul {
+                    list-style: none;
+                    li {
+                        position: relative;
+                        width: 100%;
+                        margin-bottom: 12px;
                         list-style: none;
-                        li {
-                            padding-left: 18px;
-                            position: relative;
-                            padding-bottom: 15px;
-                            line-height: normal;
-                            a {
-                                color: #292b2c;
-                                text-decoration: none;
-                                transition: all 0.5s ease;
-                                &::before {
-                                    content: "\f054";
-                                    position: absolute;
-                                    left: 0;
-                                    top: 3px;
-                                    font-family: "Font Awesome 5 Pro";
-                                    line-height: normal;
-                                    font-weight: 900;
-                                    margin-right: 10px;
-                                    font-size: 12px;
-                                }
-                            }
-                            .categories-num {
-                                float: right;
-                            }
-                        }
-                    }
-                }
-                .widget-recent-post {
-                    .recent-post {
-                        li {
-                            .post-footer {
-                                .post-content {
-                                    span {
-                                        font-size: 80%;
-                                        color: $secondary-color;
-                                        font-family: "Roboto", sans-serif;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .widget-tags {
-                    .tags {
-                        margin-top: 20px;
+                        margin-left: 14px;
                         a {
-                            text-decoration: none;
-                            border: 1px solid #ddd;
-                            font-size: 14px;
-                            padding: 5px 15px;
-                            display: inline-block;
-                            border-radius: 2px;
-                            margin-bottom: 5px;
-                            color: #292b2c;
-                            &:hover {
-                                transition: all 0.5s;
-                                background-color: $orange-color;
-                                color: white;
-                                border-color: $orange-color;
+                            color: #292b2c !important;
+                            text-decoration: none !important;
+                            transition: all 0.5s ease;
+                            &::before {
+                                content: "\f054";
+                                position: absolute;
+                                left: -14px;
+                                top: 6px;
+                                font-family: "Font Awesome 5 Pro";
+                                line-height: normal;
+                                font-weight: 900;
+                                margin-right: 10px;
+                                font-size: 12px;
                             }
+                        }
+                        .categories-num {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .widget-recent-post {
+                .recent-post {
+                    li {
+                        .post-footer {
+                            .post-content {
+                                span {
+                                    font-size: 80%;
+                                    color: $secondary-color;
+                                    font-family: "Roboto", sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .widget-tags {
+                .tags {
+                    margin-top: 20px;
+                    a {
+                        text-decoration: none;
+                        border: 1px solid #ddd;
+                        font-size: 14px;
+                        padding: 5px 15px;
+                        display: inline-block;
+                        border-radius: 2px;
+                        margin-bottom: 5px;
+                        color: #292b2c;
+                        &:hover {
+                            transition: all 0.5s;
+                            background-color: $orange-color;
+                            color: white;
+                            border-color: $orange-color;
                         }
                     }
                 }
