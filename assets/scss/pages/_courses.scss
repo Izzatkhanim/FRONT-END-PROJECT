@@ -1,0 +1,52 @@
+//  OUR COURSES
+#our-courses {
+    padding-bottom: 100px !important;
+    .courses-pages {
+        margin-left: 430px;
+        padding-top: 50px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            position: absolute;
+            right: 380px;
+        }
+        li {
+            margin-right: 5px;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                background-color: #fff;
+                border-color: #dee2e6;
+                margin-left: 0;
+                border-radius: 0.25rem;
+                border: 2px solid #dee2e6;
+                border-radius: 4px;
+                color: #888888;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 36px;
+                padding: 10px 15px;
+                &:hover {
+                    border-color: $orange-color;
+                    background-color: $orange-color;
+                    color: white;
+                }
+            }
+            .active {
+                border-color: $orange-color;
+                background-color: $orange-color;
+                color: white;
+            }
+            .disable {
+                &:hover {
+                    background-color: #fff;
+                    border-color: #dee2e6;
+                    color: #888888;
+                }
+            }
+        }
+    }
+}

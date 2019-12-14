@@ -1,0 +1,13 @@
+.btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: $orange-color;
+    color: white;
+    font-size: 16px;
+    padding: 7px 15px;
+    cursor: pointer;
+    &:hover {
+        background-color: $darken-orange-color;
+        color: white;
+        transition: all 0.3s;
+    }
+}

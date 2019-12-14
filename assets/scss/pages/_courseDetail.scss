@@ -1,0 +1,302 @@
+    // COURSE DETAILS
+    #course-detail {
+        margin-top: 100px;
+        .detail-box {
+            background-color: #fff3cd;
+            overflow: hidden;
+            .detail-img {
+                position: relative;
+                a {
+                    text-decoration: none;
+                }
+            }
+            .price-detail {
+                color: #155724;
+                background-color: #d4edda;
+                border-color: #c3e6cb;
+                bottom: 30px;
+                left: 25px;
+                position: absolute;
+                padding: 5px 15px;
+                border-radius: 5px;
+                .price {
+                    font-weight: 300;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+            .enroll-btn {
+                right: 25px;
+                position: absolute;
+                bottom: 30px;
+                a {
+                    font-weight: 300;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+            .detail-content {
+                position: relative;
+                margin: 20px;
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .head-line {
+                    background-color: #dad1b9;
+                    height: 1px;
+                    width: 790px;
+                    position: absolute;
+                    top: 43px;
+                    right: -1px;
+                }
+            }
+            .detail-foot {
+                ul {
+                    margin-top: 30px;
+                    list-style-type: none;
+                    display: flex;
+                    li {
+                        .line {
+                            background-color: #dad1b9;
+                            box-sizing: border-box;
+                            height: 50px;
+                            width: 1px;
+                            margin-left: 15px;
+                            margin-right: 15px;
+                        }
+                        display: flex;
+                        .instructor {
+                            img {
+                                margin-left: 20px;
+                                border-radius: 5px;
+                                float: left;
+                                margin-right: 10px;
+                                max-width: 50px;
+                                width: 100%;
+                            }
+                        }
+                        .instructor-info {
+                            span {
+                                display: flex;
+                                font-weight: 600;
+                            }
+                            a {
+                                font-family: 'Roboto', sans-serif;
+                                color: black;
+                                text-decoration: none;
+                                font-weight: 300;
+                                &:hover {
+                                    transition: all 0.5s;
+                                    color: $orange-color;
+                                }
+                            }
+                        }
+                        .course-cat {
+                            span {
+                                display: flex;
+                                font-weight: 600;
+                            }
+                            a {
+                                color: black;
+                                text-decoration: none;
+                                font-weight: 300;
+                                font-weight: 300;
+                                &:hover {
+                                    transition: all 0.5s;
+                                    color: $orange-color;
+                                }
+                            }
+                        }
+                        .course-students {
+                            span {
+                                font-weight: 600;
+                            }
+                            p {
+                                font-weight: 300;
+                            }
+                        }
+                        .course-review {
+                            span {
+                                font-weight: 600;
+                            }
+                            .rating-stars {
+                                i {
+                                    font-size: 12px;
+                                    color: $orange-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sidebar {
+                .form-inline {
+                    .form-group {
+                        input {
+                            margin-left: 0 !important;
+                            display: inline-block;
+                            width: 250px;
+                            vertical-align: middle;
+                            height: 47px;
+                            position: relative;
+                        }
+                        i {
+                            cursor: pointer;
+                            position: absolute;
+                            right: 20px;
+                            font-size: 18px;
+                            &:hover {
+                                transition: all 0.5s;
+                                color: $orange-color;
+                            }
+                        }
+                    }
+                }
+                .widget {
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+                    .widget-title {
+                        position: relative;
+                        padding-bottom: 15px;
+                        &::before {
+                            background-color: #FFBC09;
+                            bottom: 0;
+                            content: "";
+                            height: 3px;
+                            left: 0;
+                            position: absolute;
+                            width: 80px;
+                            z-index: 1;
+                        }
+                        &::after {
+                            background-color: #ddd;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            height: 1px;
+                            bottom: 0;
+                            width: 100%;
+                            content: "";
+                            z-index: 0;
+                        }
+                    }
+                    ul {
+                        margin-top: 20px;
+                        padding: 0;
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            width: 100%;
+                            margin-bottom: 12px;
+                            list-style: none;
+                            .post-footer {
+                                .post-img {
+                                    float: left;
+                                    margin-right: 10px;
+                                    max-width: 60px;
+                                    a {
+                                        color: #292b2c;
+                                        text-decoration: none;
+                                        transition: all 0.5s ease;
+                                        img {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                                .post-content {
+                                    overflow: hidden;
+                                    h6 {
+                                        font-size: 14px;
+                                        line-height: normal;
+                                        margin-bottom: 5px;
+                                        font-weight: normal;
+                                        a {
+                                            color: #292b2c;
+                                            text-decoration: none;
+                                            transition: all 0.5s ease;
+                                        }
+                                    }
+                                    .text-success {
+                                        color: #28a745!important;
+                                    }
+                                    .small {
+                                        font-size: 80%;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .widget-categories {
+                    ul {
+                        list-style: none;
+                        li {
+                            padding-left: 18px;
+                            position: relative;
+                            padding-bottom: 15px;
+                            line-height: normal;
+                            a {
+                                color: #292b2c;
+                                text-decoration: none;
+                                transition: all 0.5s ease;
+                                &::before {
+                                    content: "\f054";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 3px;
+                                    font-family: "Font Awesome 5 Pro";
+                                    line-height: normal;
+                                    font-weight: 900;
+                                    margin-right: 10px;
+                                    font-size: 12px;
+                                }
+                            }
+                            .categories-num {
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                .widget-recent-post {
+                    .recent-post {
+                        li {
+                            .post-footer {
+                                .post-content {
+                                    span {
+                                        font-size: 80%;
+                                        color: $secondary-color;
+                                        font-family: 'Roboto', sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .widget-tags {
+                    .tags {
+                        margin-top: 20px;
+                        a {
+                            text-decoration: none;
+                            border: 1px solid #ddd;
+                            font-size: 14px;
+                            padding: 5px 15px;
+                            display: inline-block;
+                            border-radius: 2px;
+                            margin-bottom: 5px;
+                            color: #292b2c;
+                            &:hover {
+                                transition: all 0.5s;
+                                background-color: $orange-color;
+                                color: white;
+                                border-color: $orange-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
