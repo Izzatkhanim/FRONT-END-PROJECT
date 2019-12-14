@@ -1781,7 +1781,7 @@ main #about ul li a:hover {
   color: #FFBC09;
 }
 
-#features {
+main #features {
   padding-bottom: 100px;
   margin-top: 0px;
   position: relative;
@@ -1789,7 +1789,7 @@ main #about ul li a:hover {
   background-color: #F7F7F7;
 }
 
-#features .container .row .heading h2 {
+main #features .container .row .heading h2 {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 100px;
@@ -1800,7 +1800,7 @@ main #about ul li a:hover {
   line-height: 1.2;
 }
 
-#features .container .row .heading p {
+main #features .container .row .heading p {
   text-align: center;
   color: #888888;
   font-family: 'Roboto', sans-serif;
@@ -1810,7 +1810,7 @@ main #about ul li a:hover {
   line-height: 25px;
 }
 
-#features .container .row .card {
+main #features .container .row .card {
   border: none;
   -webkit-box-shadow: 0px 4px 20px rgba(10, 10, 10, 0.1);
           box-shadow: 0px 4px 20px rgba(10, 10, 10, 0.1);
@@ -1822,7 +1822,7 @@ main #about ul li a:hover {
   background-color: #fff !important;
 }
 
-#features .container .row .card::before {
+main #features .container .row .card::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1837,7 +1837,7 @@ main #about ul li a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-#features .container .row .card .box-icon-1 {
+main #features .container .row .card .box-icon-1 {
   border-radius: 100%;
   display: inline-block;
   padding: 20px;
@@ -1849,7 +1849,7 @@ main #about ul li a:hover {
   background-color: #F6475F;
 }
 
-#features .container .row .card .box-icon-2 {
+main #features .container .row .card .box-icon-2 {
   border-radius: 100%;
   display: inline-block;
   padding: 20px;
@@ -1861,7 +1861,7 @@ main #about ul li a:hover {
   background-color: #FFBC09;
 }
 
-#features .container .row .card .box-icon-3 {
+main #features .container .row .card .box-icon-3 {
   border-radius: 100%;
   display: inline-block;
   padding: 20px;
@@ -1873,12 +1873,12 @@ main #about ul li a:hover {
   background-color: #b3d36a;
 }
 
-#features .container .row .card img {
+main #features .container .row .card img {
   max-width: 60px;
   padding: 5px;
 }
 
-#features .container .row .card .card-context h5 {
+main #features .container .row .card .card-context h5 {
   color: #292b2c;
   font-family: 'Rubik', sans-serif;
   font-size: 1.25rem;
@@ -1888,7 +1888,7 @@ main #about ul li a:hover {
   text-align: center;
 }
 
-#features .container .row .card p {
+main #features .container .row .card p {
   color: #888888;
   text-align: center;
   font-size: 15px;
@@ -1896,12 +1896,12 @@ main #about ul li a:hover {
   line-height: 25px;
 }
 
-#about-us {
+main #about-us {
   overflow: hidden;
   margin-top: 40px;
 }
 
-#about-us .container-fluid .about {
+main #about-us .container-fluid .about {
   margin-right: -50px;
   position: relative;
   z-index: 2 !important;
@@ -1912,40 +1912,40 @@ main #about ul li a:hover {
   background-color: white;
 }
 
-#about-us .container-fluid .about p {
+main #about-us .container-fluid .about p {
   text-align: left;
 }
 
-#about-us .container-fluid .about ul {
+main #about-us .container-fluid .about ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#about-us .container-fluid .about ul li {
+main #about-us .container-fluid .about ul li {
   text-align: left;
 }
 
-#about-us .container-fluid .about ul li:first-child {
+main #about-us .container-fluid .about ul li:first-child {
   margin-right: 20px;
 }
 
-#about-us .container-fluid .about ul li:first-child h3 {
+main #about-us .container-fluid .about ul li:first-child h3 {
   color: #f6475f;
 }
 
-#about-us .container-fluid .about ul li:last-child h3 {
+main #about-us .container-fluid .about ul li:last-child h3 {
   color: #b3d36a;
 }
 
-#about-us .container-fluid .video {
+main #about-us .container-fluid .video {
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
 }
 
-#about-us .container-fluid .video::before {
+main #about-us .container-fluid .video::before {
   bottom: 0;
   content: "";
   left: 0;
@@ -1954,14 +1954,14 @@ main #about ul li a:hover {
   top: 0;
 }
 
-#about-us .container-fluid .video img {
+main #about-us .container-fluid .video img {
   z-index: -1;
   position: relative;
   max-width: 100%;
   border-style: none;
 }
 
-#teachers {
+main #teachers {
   margin-top: 100px;
   overflow: hidden;
   padding: 100px 0;
@@ -1973,7 +1973,7 @@ main #about ul li a:hover {
   z-index: 1;
 }
 
-#teachers::before {
+main #teachers::before {
   background-color: rgba(7, 41, 77, 0.9);
   position: absolute;
   content: '';
@@ -1983,31 +1983,31 @@ main #about ul li a:hover {
   right: 0;
 }
 
-#teachers .heading h2 {
+main #teachers .heading h2 {
   color: white;
   font-size: 32px;
   font-weight: 600;
   text-align: center;
 }
 
-#teachers .heading p {
+main #teachers .heading p {
   margin-top: 15px;
   text-align: center;
   color: white;
 }
 
-#teachers .card {
+main #teachers .card {
   margin-top: 30px;
   border-radius: 10px;
   border: none;
 }
 
-#teachers .card img {
+main #teachers .card img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-#teachers .card .card-content h5 {
+main #teachers .card .card-content h5 {
   font-weight: 600;
   margin-top: 15px;
   text-align: center;
@@ -2015,50 +2015,50 @@ main #about ul li a:hover {
   font-family: 'Rubik', sans-serif;
 }
 
-#teachers .card .card-content h5 a {
+main #teachers .card .card-content h5 a {
   color: #292b2c;
   text-decoration: none;
 }
 
-#teachers .card .card-content h5 a:hover {
+main #teachers .card .card-content h5 a:hover {
   color: #FFBC09;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-#teachers .card .card-content p {
+main #teachers .card .card-content p {
   margin-top: 5px;
   text-align: center !important;
   color: #888888;
 }
 
-#counter-2 {
+main #counter-2 {
   padding-bottom: 100px;
   background-color: #F7F7F7;
   overflow: hidden;
   margin-top: 0;
 }
 
-#counter-2 .container {
+main #counter-2 .container {
   margin-top: 100px;
 }
 
-#counter-2 .row {
+main #counter-2 .row {
   margin-left: 35px;
 }
 
-#counter-2 .row .counter-head {
+main #counter-2 .row .counter-head {
   margin-left: 55px;
 }
 
-#counter-2 .row .counter-body h3 {
+main #counter-2 .row .counter-body h3 {
   color: black;
   margin-top: 10px;
   text-align: center;
   margin-left: -55px;
 }
 
-#counter-2 .row .counter-body p {
+main #counter-2 .row .counter-body p {
   color: #888888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2068,40 +2068,40 @@ main #about ul li a:hover {
   font-weight: 300;
 }
 
-#student-say {
+main #student-say {
   padding: 100px;
 }
 
-#student-say .row {
+main #student-say .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#student-say .row .heading {
+main #student-say .row .heading {
   text-align: center;
 }
 
-#student-say .row .heading h2 {
+main #student-say .row .heading h2 {
   font-size: 32px;
   font-weight: 600;
 }
 
-#student-say .row .heading p {
+main #student-say .row .heading p {
   font-weight: 300;
   color: #888888;
 }
 
-#student-say .student-owl-carousel {
+main #student-say .student-owl-carousel {
   margin-top: 30px;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item {
+main #student-say .student-owl-carousel .student-owl-item .item {
   margin-right: 18px;
   margin-left: 25px;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box {
+main #student-say .student-owl-carousel .student-owl-item .item .box {
   background-color: #fff;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
@@ -2112,7 +2112,7 @@ main #about ul li a:hover {
   z-index: 1;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box:before {
+main #student-say .student-owl-carousel .student-owl-item .item .box:before {
   content: "\f10e";
   position: absolute;
   right: 40px;
@@ -2125,7 +2125,7 @@ main #about ul li a:hover {
   color: rgba(0, 0, 0, 0.02);
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-image {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-image {
   top: 23px;
   margin-left: -120px;
   margin-right: 20px;
@@ -2134,34 +2134,34 @@ main #about ul li a:hover {
   max-width: 100px;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-image img {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-image img {
   display: block;
   width: 100%;
   border-radius: 5px;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-content {
   overflow: hidden;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name {
   text-align: left;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name h6 {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name h6 {
   margin-bottom: 8px;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name span {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name span {
   font-style: italic;
   color: #FFBC09;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment {
   margin-top: 10px;
 }
 
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment p {
+main #student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment p {
   font-size: 16px;
   font-weight: 400;
   color: #888888;
@@ -2477,24 +2477,24 @@ footer #footer-bottom ul a:hover {
   color: #888888;
 }
 
-#course-detail {
+main #course-detail {
   margin-top: 100px;
 }
 
-#course-detail .detail-box {
+main #course-detail .detail-box {
   background-color: #fff3cd;
   overflow: hidden;
 }
 
-#course-detail .detail-box .detail-img {
+main #course-detail .detail-box .detail-img {
   position: relative;
 }
 
-#course-detail .detail-box .detail-img a {
+main #course-detail .detail-box .detail-img a {
   text-decoration: none;
 }
 
-#course-detail .detail-box .price-detail {
+main #course-detail .detail-box .price-detail {
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
@@ -2505,37 +2505,37 @@ footer #footer-bottom ul a:hover {
   border-radius: 5px;
 }
 
-#course-detail .detail-box .price-detail .price {
+main #course-detail .detail-box .price-detail .price {
   font-weight: 300;
 }
 
-#course-detail .detail-box .price-detail .price span {
+main #course-detail .detail-box .price-detail .price span {
   font-weight: 600;
 }
 
-#course-detail .detail-box .enroll-btn {
+main #course-detail .detail-box .enroll-btn {
   right: 25px;
   position: absolute;
   bottom: 30px;
 }
 
-#course-detail .detail-box .enroll-btn a {
+main #course-detail .detail-box .enroll-btn a {
   font-weight: 300;
   font-size: 14px;
   text-decoration: none;
 }
 
-#course-detail .detail-box .detail-content {
+main #course-detail .detail-box .detail-content {
   position: relative;
   margin: 20px;
 }
 
-#course-detail .detail-box .detail-content h2 {
+main #course-detail .detail-box .detail-content h2 {
   font-size: 24px;
   font-weight: 600;
 }
 
-#course-detail .detail-box .detail-content .head-line {
+main #course-detail .detail-box .detail-content .head-line {
   background-color: #dad1b9;
   height: 1px;
   width: 790px;
@@ -2544,7 +2544,7 @@ footer #footer-bottom ul a:hover {
   right: -1px;
 }
 
-#course-detail .detail-box .detail-foot ul {
+main #course-detail .detail-box .detail-foot ul {
   margin-top: 30px;
   list-style-type: none;
   display: -webkit-box;
@@ -2552,13 +2552,13 @@ footer #footer-bottom ul a:hover {
   display: flex;
 }
 
-#course-detail .detail-box .detail-foot ul li {
+main #course-detail .detail-box .detail-foot ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#course-detail .detail-box .detail-foot ul li .line {
+main #course-detail .detail-box .detail-foot ul li .line {
   background-color: #dad1b9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2568,7 +2568,7 @@ footer #footer-bottom ul a:hover {
   margin-right: 15px;
 }
 
-#course-detail .detail-box .detail-foot ul li .instructor img {
+main #course-detail .detail-box .detail-foot ul li .instructor img {
   margin-left: 20px;
   border-radius: 5px;
   float: left;
@@ -2577,64 +2577,64 @@ footer #footer-bottom ul a:hover {
   width: 100%;
 }
 
-#course-detail .detail-box .detail-foot ul li .instructor-info span {
+main #course-detail .detail-box .detail-foot ul li .instructor-info span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 600;
 }
 
-#course-detail .detail-box .detail-foot ul li .instructor-info a {
-  font-family: 'Roboto', sans-serif;
+main #course-detail .detail-box .detail-foot ul li .instructor-info a {
+  font-family: "Roboto", sans-serif;
   color: black;
   text-decoration: none;
   font-weight: 300;
 }
 
-#course-detail .detail-box .detail-foot ul li .instructor-info a:hover {
+main #course-detail .detail-box .detail-foot ul li .instructor-info a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #FFBC09;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-cat span {
+main #course-detail .detail-box .detail-foot ul li .course-cat span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 600;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-cat a {
+main #course-detail .detail-box .detail-foot ul li .course-cat a {
   color: black;
   text-decoration: none;
   font-weight: 300;
   font-weight: 300;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-cat a:hover {
+main #course-detail .detail-box .detail-foot ul li .course-cat a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #FFBC09;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-students span {
+main #course-detail .detail-box .detail-foot ul li .course-students span {
   font-weight: 600;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-students p {
+main #course-detail .detail-box .detail-foot ul li .course-students p {
   font-weight: 300;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-review span {
+main #course-detail .detail-box .detail-foot ul li .course-review span {
   font-weight: 600;
 }
 
-#course-detail .detail-box .detail-foot ul li .course-review .rating-stars i {
+main #course-detail .detail-box .detail-foot ul li .course-review .rating-stars i {
   font-size: 12px;
   color: #FFBC09;
 }
 
-#course-detail .detail-box .sidebar .form-inline .form-group input {
+main #course-detail .detail-box .sidebar .form-inline .form-group input {
   margin-left: 0 !important;
   display: inline-block;
   width: 250px;
@@ -2643,32 +2643,32 @@ footer #footer-bottom ul a:hover {
   position: relative;
 }
 
-#course-detail .detail-box .sidebar .form-inline .form-group i {
+main #course-detail .detail-box .sidebar .form-inline .form-group i {
   cursor: pointer;
   position: absolute;
   right: 20px;
   font-size: 18px;
 }
 
-#course-detail .detail-box .sidebar .form-inline .form-group i:hover {
+main #course-detail .detail-box .sidebar .form-inline .form-group i:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #FFBC09;
 }
 
-#course-detail .detail-box .sidebar .widget {
+main #course-detail .detail-box .sidebar .widget {
   margin-top: 30px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-#course-detail .detail-box .sidebar .widget .widget-title {
+main #course-detail .detail-box .sidebar .widget .widget-title {
   position: relative;
   padding-bottom: 15px;
 }
 
-#course-detail .detail-box .sidebar .widget .widget-title::before {
-  background-color: #FFBC09;
+main #course-detail .detail-box .sidebar .widget .widget-title::before {
+  background-color: #ffbc09;
   bottom: 0;
   content: "";
   height: 3px;
@@ -2678,7 +2678,7 @@ footer #footer-bottom ul a:hover {
   z-index: 1;
 }
 
-#course-detail .detail-box .sidebar .widget .widget-title::after {
+main #course-detail .detail-box .sidebar .widget .widget-title::after {
   background-color: #ddd;
   position: absolute;
   left: 0;
@@ -2690,82 +2690,82 @@ footer #footer-bottom ul a:hover {
   z-index: 0;
 }
 
-#course-detail .detail-box .sidebar .widget ul {
+main #course-detail .detail-box .sidebar .widget ul {
   margin-top: 20px;
   padding: 0;
   list-style: none;
 }
 
-#course-detail .detail-box .sidebar .widget ul li {
+main #course-detail .detail-box .sidebar .widget ul li {
   display: inline-block;
   width: 100%;
   margin-bottom: 12px;
   list-style: none;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-img {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-img {
   float: left;
   margin-right: 10px;
   max-width: 60px;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-img a {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-img a {
   color: #292b2c;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-img a img {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-img a img {
   max-width: 100%;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-content {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-content {
   overflow: hidden;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-content h6 {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-content h6 {
   font-size: 14px;
   line-height: normal;
   margin-bottom: 5px;
   font-weight: normal;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-content h6 a {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-content h6 a {
   color: #292b2c;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-content .text-success {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-content .text-success {
   color: #28a745 !important;
 }
 
-#course-detail .detail-box .sidebar .widget ul li .post-footer .post-content .small {
+main #course-detail .detail-box .sidebar .widget ul li .post-footer .post-content .small {
   font-size: 80%;
   font-weight: 400;
 }
 
-#course-detail .detail-box .sidebar .widget-categories ul {
+main #course-detail .detail-box .sidebar .widget-categories ul {
   list-style: none;
 }
 
-#course-detail .detail-box .sidebar .widget-categories ul li {
+main #course-detail .detail-box .sidebar .widget-categories ul li {
   padding-left: 18px;
   position: relative;
   padding-bottom: 15px;
   line-height: normal;
 }
 
-#course-detail .detail-box .sidebar .widget-categories ul li a {
+main #course-detail .detail-box .sidebar .widget-categories ul li a {
   color: #292b2c;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-#course-detail .detail-box .sidebar .widget-categories ul li a::before {
+main #course-detail .detail-box .sidebar .widget-categories ul li a::before {
   content: "\f054";
   position: absolute;
   left: 0;
@@ -2777,21 +2777,21 @@ footer #footer-bottom ul a:hover {
   font-size: 12px;
 }
 
-#course-detail .detail-box .sidebar .widget-categories ul li .categories-num {
+main #course-detail .detail-box .sidebar .widget-categories ul li .categories-num {
   float: right;
 }
 
-#course-detail .detail-box .sidebar .widget-recent-post .recent-post li .post-footer .post-content span {
+main #course-detail .detail-box .sidebar .widget-recent-post .recent-post li .post-footer .post-content span {
   font-size: 80%;
   color: #888888;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-#course-detail .detail-box .sidebar .widget-tags .tags {
+main #course-detail .detail-box .sidebar .widget-tags .tags {
   margin-top: 20px;
 }
 
-#course-detail .detail-box .sidebar .widget-tags .tags a {
+main #course-detail .detail-box .sidebar .widget-tags .tags a {
   text-decoration: none;
   border: 1px solid #ddd;
   font-size: 14px;
@@ -2802,7 +2802,7 @@ footer #footer-bottom ul a:hover {
   color: #292b2c;
 }
 
-#course-detail .detail-box .sidebar .widget-tags .tags a:hover {
+main #course-detail .detail-box .sidebar .widget-tags .tags a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: #FFBC09;

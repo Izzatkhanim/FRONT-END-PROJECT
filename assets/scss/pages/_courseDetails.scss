@@ -1,4 +1,5 @@
-    // COURSE DETAILS
+// COURSE DETAILS
+main {
     #course-detail {
         margin-top: 100px;
         .detail-box {
@@ -83,7 +84,7 @@
                                 font-weight: 600;
                             }
                             a {
-                                font-family: 'Roboto', sans-serif;
+                                font-family: "Roboto", sans-serif;
                                 color: black;
                                 text-decoration: none;
                                 font-weight: 300;
@@ -162,7 +163,7 @@
                         position: relative;
                         padding-bottom: 15px;
                         &::before {
-                            background-color: #FFBC09;
+                            background-color: #ffbc09;
                             bottom: 0;
                             content: "";
                             height: 3px;
@@ -220,7 +221,7 @@
                                         }
                                     }
                                     .text-success {
-                                        color: #28a745!important;
+                                        color: #28a745 !important;
                                     }
                                     .small {
                                         font-size: 80%;
@@ -269,7 +270,7 @@
                                     span {
                                         font-size: 80%;
                                         color: $secondary-color;
-                                        font-family: 'Roboto', sans-serif;
+                                        font-family: "Roboto", sans-serif;
                                     }
                                 }
                             }
@@ -300,3 +301,4 @@
             }
         }
     }
+}
