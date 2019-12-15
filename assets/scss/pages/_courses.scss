@@ -37,7 +37,7 @@
             }
             .active {
                 border-color: $orange-color;
-                background-color: $orange-color;
+                background-color: $orange-color !important;
                 color: white;
             }
             .disable {

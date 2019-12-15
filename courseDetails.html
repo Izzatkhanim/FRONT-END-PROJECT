@@ -126,7 +126,7 @@
                                             Home <i class="fas fa-angle-down"></i>
                                         </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Home Version 1</a>
+                                    <a class="dropdown-item" href="index.html">Home Version 1</a>
                                     <a class="dropdown-item" href="#">Home Version 2</a>
                                     <a class="dropdown-item" href="#">Home Version 3</a>
                                     <a class="dropdown-item" href="#">Home Version 4</a>
@@ -160,7 +160,7 @@
                                         </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="courses.html">Courses</a>
-                                    <a class="dropdown-item" href="coursedetail.html">Course Detail</a>
+                                    <a class="dropdown-item" href="courseDetails.html">Course Detail</a>
 
                                 </div>
                             </li>
@@ -195,7 +195,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-togle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button" data-togle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Contact
                                         </a>
                             </li>
@@ -245,72 +245,73 @@
 
         <!-- COURSE DETAIL -->
 
-        <section id="course-detail">
+        <section id="detail">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="detail-box">
-                            <div class="detail-zad">
-                                <div class="detail-img">
-                                    <a href="#">
-                                        <img src="assets/img/course_img_big.jpg" alt="">
-                                    </a>
-                                    <div class="price-detail">
-                                        <span class="price">
-                                    <span>Price:</span> Free
-                                        </span>
-                                    </div>
-                                    <div class="enroll-btn">
-                                        <a href="#" class="btn btn-default btn-sm">Get Enroll</a>
-                                    </div>
+                        <div class="course">
+                            <div class="course-img" data-aos="fade-up">
+                                <a href="#">
+                                    <img src="assets/img/course_img_big.jpg" alt="">
+                                </a>
+                                <div class="price">
+                                    <span class="free"><strong>Price :</strong> Free</span>
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="btn">Get Enroll</a>
+                                </div>
+                            </div>
+                            <div class="course-detail" data-aos="fade-up">
+                                <div class="detail-title">
+                                    <h2>Nullam id varius nunc id varius nunc</h2>
                                 </div>
                                 <div class="detail-content">
-                                    <h2>Nullam id varius nunc id varius nunc</h2>
-                                    <span class="head-line"></span>
-                                </div>
-                                <div class="detail-foot">
                                     <ul>
                                         <li>
-                                            <div class="instructor">
+                                            <div class="content">
                                                 <img src="assets/img/user1.jpg" alt="">
-                                            </div>
-                                            <div class="instructor-info">
-                                                <span>Teacher:</span>
-                                                <a href="#">Alia Noor</a>
-                                            </div>
-                                            <span class="line"></span>
-                                        </li>
-                                        <li>
-                                            <div class="course-cat">
-                                                <span>Categories:</span>
-                                                <a href="#">Development,</a>
-                                                <a href="#">Business</a>
-                                            </div>
-                                            <span class="line"></span>
-                                        </li>
-                                        <li>
-                                            <div class="course-students">
-                                                <span>Students:</span>
-                                                <p>352</p>
-                                            </div>
-                                            <span class="line"></span>
-                                        </li>
-                                        <li>
-                                            <div class="course-review">
-                                                <span>Review:</span>
-                                                <div class="rating-stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star-half-alt"></i>
+                                                <div class="info">
+                                                    <span>Teacher:</span>
+                                                    <a href="#">Alia Noor</a>
                                                 </div>
                                             </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="content">
+                                                <div class="info">
+                                                    <span>Categories:</span>
+                                                    <a href="#">Development</a>,<a href="#"> Business</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content">
+                                                <div class="info">
+                                                    <span>Students:</span>
+                                                    <a href="#">352</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content">
+                                                <div class="info">
+                                                    <span>Review:</span>
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                </li>
-                                </ul>
                             </div>
-                            <div class="course_tabs">
+                            <div class="course-info-tabs" data-aos="fade-up">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="overview-tab1" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
@@ -326,8 +327,8 @@
                                     </li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab1">
-                                        <div class="border radius_all_5 tab_box">
+                                    <div class="tab-pane fade active show text-left" id="overview" role="tabpanel" aria-labelledby="overview-tab1">
+                                        <div class="content-text">
                                             <p>Lorem Ipsu. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled
                                                 it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                                                 Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -337,7 +338,9 @@
                                         <div id="accordion" class="accordion">
                                             <div class="card">
                                                 <div class="card-header" id="heading-1-One">
-                                                    <h6 class="mb-0"> <a data-toggle="collapse" href="#collapse-1-One" aria-expanded="true" aria-controls="collapse-1-One">Leap into electronic typesetting <span class="item_meta duration">30 min</span></a></h6>
+                                                    <h6 class="mb-0"> <a data-toggle="collapse" href="#collapse-1-One" aria-expanded="true" aria-controls="collapse-1-One">Leap
+                                                                into electronic typesetting <span class="item_time">30
+                                                                    min</span></a></h6>
                                                 </div>
                                                 <div id="collapse-1-One" class="collapse show" aria-labelledby="heading-1-One" data-parent="#accordion">
                                                     <div class="card-body">
@@ -348,7 +351,8 @@
                                             </div>
                                             <div class="card">
                                                 <div class="card-header" id="heading-1-Two">
-                                                    <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-1-Two" aria-expanded="false" aria-controls="collapse-1-Two">Letraset sheets containing <span class="item_meta duration">30 min</span></a> </h6>
+                                                    <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-1-Two" aria-expanded="false" aria-controls="collapse-1-Two">Letraset sheets containing
+                                                                <span class="item_time">30 min</span></a> </h6>
                                                 </div>
                                                 <div id="collapse-1-Two" class="collapse" aria-labelledby="heading-1-Two" data-parent="#accordion">
                                                     <div class="card-body">
@@ -359,7 +363,8 @@
                                             </div>
                                             <div class="card">
                                                 <div class="card-header" id="heading-1-Three">
-                                                    <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-1-Three" aria-expanded="false" aria-controls="collapse-1-Three">took a galley of type <span class="item_meta duration">45 min</span></a> </h6>
+                                                    <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-1-Three" aria-expanded="false" aria-controls="collapse-1-Three">took a galley of type <span
+                                                                    class="item_time">45 min</span></a> </h6>
                                                 </div>
                                                 <div id="collapse-1-Three" class="collapse" aria-labelledby="heading-1-Three" data-parent="#accordion">
                                                     <div class="card-body">
@@ -373,30 +378,31 @@
                                     <div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab1">
                                         <div class="course_author">
                                             <div class="author_img">
-                                                <img class="radius_all_5" src="assets/images/client_img1.jpg" alt="client_img1">
+                                                <img class="img-fluid" src="assets/img/client_img1.jpg" alt="client_img1">
                                             </div>
                                             <div class="author_meta">
                                                 <div class="author_intro">
                                                     <h6>Alia Noor</h6>
                                                     <span class="text_default">Co-Founder</span>
                                                 </div>
-                                                <div class="author_desc">
+                                                <div class="author_desc mt-1">
                                                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab1">
-                                        <div class="border radius_all_5 tab_box">
+                                        <div class="p-3 border">
                                             <div class="course_rating">
                                                 <div class="rating_review">
-                                                    <p><span class="review_number">4.50</span> average based on 2 ratings</p>
+                                                    <p><span class="review_number">4.50</span> average based on 2 ratings
+                                                    </p>
                                                     <div class="rating_stars">
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star-half"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
                                                     </div>
                                                 </div>
                                                 <div class="rating_box">
@@ -444,13 +450,14 @@
                                                 <li class="comment_info">
                                                     <div class="d-flex">
                                                         <div class="user_img">
-                                                            <img class="radius_all_5" src="assets/images/client_img1.jpg" alt="client_img1">
+                                                            <img class="" src="assets/img/client_img1.jpg" alt="client_img1">
                                                         </div>
                                                         <div class="comment_content">
-                                                            <div class="d-sm-flex align-items-center">
+                                                            <div class="d-sm-flex align-items-center ">
                                                                 <div class="meta_data">
                                                                     <h6><a href="#">Alia Noor</a></h6>
-                                                                    <div class="comment-time">March 5, 2018, 6:05 PM</div>
+                                                                    <span class="comment-time">March 5, 2018, 6:05
+                                                                            PM</span>
                                                                 </div>
                                                                 <div class="ml-auto mb-2">
                                                                     <div class="rating_stars">
@@ -471,13 +478,14 @@
                                                 <li class="comment_info">
                                                     <div class="d-flex">
                                                         <div class="user_img">
-                                                            <img class="radius_all_5" src="assets/images/client_img2.jpg" alt="client_img2">
+                                                            <img class="radius_all_5" src="assets/img/client_img2.jpg" alt="client_img2">
                                                         </div>
                                                         <div class="comment_content">
                                                             <div class="d-sm-flex align-items-center">
                                                                 <div class="meta_data">
                                                                     <h6><a href="#">Dany Core</a></h6>
-                                                                    <div class="comment-time">april 15, 2018, 10:30 PM</div>
+                                                                    <span class="comment-time">april 15, 2018, 10:30
+                                                                            PM</span>
                                                                 </div>
                                                                 <div class="ml-auto mb-2">
                                                                     <div class="rating_stars">
@@ -503,11 +511,12 @@
                                                     <div class="row">
                                                         <div class="form-group col-12">
                                                             <div class="rating">
-                                                                <span data-value="1"><i class="ion-android-star-outline"></i></span>
-                                                                <span data-value="2"><i class="ion-android-star-outline"></i></span>
-                                                                <span data-value="3"><i class="ion-android-star-outline"></i></span>
-                                                                <span data-value="4"><i class="ion-android-star-outline"></i></span>
-                                                                <span data-value="5"><i class="ion-android-star-outline"></i></span>
+                                                                <span data-value="1"><i class="far fa-star"></i></span>
+                                                                <span data-value="2"><i
+                                                                            class="far fa-star"></i></i></i></span>
+                                                                <span data-value="3"><i class="far fa-star "></i></span>
+                                                                <span data-value="4"><i class="far fa-star"></i></span>
+                                                                <span data-value="5"><i class="far fa-star"></i></span>
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-12">
@@ -521,7 +530,7 @@
                                                         </div>
 
                                                         <div class="form-group col-12">
-                                                            <button type="submit" class="btn btn-default" name="submit" value="Submit">Submit Review</button>
+                                                            <button type="submit" class="btn btn-default bg_default p-2" name="submit" value="Submit">Submit Review</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -530,201 +539,229 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="heading">
-                                    <h6>Related Courses</h6>
-                                </div>
-                            </div>
+                            <div class="row" data-aos="fade-up">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <a href="#">
+                                                <img src="assets/img/course_img1.jpg" class="card-img-top">
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-txt">
+                                                <div class="card-inform">
+                                                    <h6>Nullam id varius nunc id varius nunc</h6>
+                                                    <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
+                                                </div>
+                                                <div class="course-inform d-flex">
+                                                    <div class="stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </div>
+                                                    <ul class="view-like">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="far fa-user"></i> 31
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="far fa-heart"></i> 31
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="teacher">
+                                                    <a href="#">
+                                                        <img src="assets/img/user1.jpg" alt="user1">
+                                                        <span>Alia Noor</span>
+                                                    </a>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="free">
+                                                            Free
+                                                        </span>
+                                                </div>
 
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <a href="#">
-                                            <img src="assets/img/course_img1.jpg" class="card-img-top" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 class="content-title">
-                                            <a href="#">
-                                                Nullam id varius nunc id varius nunc
-                                            </a>
-                                        </h4>
-                                        <p>If you are going to use a passage of Lorem <br> Ipsum you need to be sure anything <br> embarrassing hidden in the middle of text.</p>
-                                        <div class="courses-info">
-                                            <div class="rating-stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
                                             </div>
-                                            <ul class="list-none content-likes">
-                                                <li><a href="#"><i class="far fa-user mr-2"></i>31</a></li>
-                                                <li><a href="#"><i class="far fa-heart mr-2"></i>10</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="content-footer">
-                                        <div class="teacher">
-                                            <a href="#"><img src="assets/img/user1.jpg" alt="">
-                                                <span>Alia Noor</span>
-                                            </a>
-                                        </div>
-                                        <div class="price">
-                                            <span class="alert alert-success">Free</span>
+
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <a href="#">
-                                            <img src="assets/img/course_img2.jpg" class="card-img-top" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 class="content-title">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-img">
                                             <a href="#">
-                                                    Nullam id varius nunc id varius nunc
-                                                </a>
-                                        </h4>
-                                        <p>If you are going to use a passage of Lorem <br> Ipsum you need to be sure anything <br> embarrassing hidden in the middle of text.</p>
-                                        <div class="courses-info">
-                                            <div class="rating-stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <ul class="list-none content-likes">
-                                                <li><a href="#"><i class="far fa-user mr-2"></i>31</a></li>
-                                                <li><a href="#"><i class="far fa-heart mr-2"></i>10</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="content-footer">
-                                        <div class="teacher">
-                                            <a href="#"><img src="assets/img/user2.jpg" alt="">
-                                                <span>Dany Core</span>
+                                                <img src="assets/img/course_img2.jpg" class="card-img-top">
                                             </a>
                                         </div>
-                                        <div class="price">
-                                            <span class="paid"> $49</span>
+                                        <div class="card-body">
+                                            <div class="card-txt">
+                                                <div class="card-inform">
+                                                    <h6>Nullam id varius nunc id varius nunc</h6>
+                                                    <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
+                                                </div>
+                                                <div class="course-inform d-flex">
+                                                    <div class="stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </div>
+                                                    <ul class="view-like">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="far fa-user"></i> 31
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="far fa-heart"></i> 31
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="teacher">
+                                                    <a href="#">
+                                                        <img src="assets/img/user2.jpg" alt="user1">
+                                                        <span>Dany Core</span>
+                                                    </a>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="paid">
+                                                            $49
+                                                        </span>
+                                                </div>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mt-lg-0 mt-4 pt-3 pt-lg-0">
                         <div class="sidebar">
-                            <form class="form-inline">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mx-sm-3" placeholder="Search...">
-                                    <i class="fas fa-search"></i>
+                            <div class="search" data-aos="fade-left">
+                                <form class="search_form">
+                                    <input required="" class="form-control" placeholder="Search..." type="text">
+                                    <a href="#" type="submit" title="Subscribe" name="submit" value="Submit">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <div class="latest-course" data-aos="fade-left">
+                                <h5>
+                                    Letest Course
+                                </h5>
+                                <div class="course-content">
+                                    <ul>
+                                        <li>
+                                            <div class="course-footer">
+                                                <div class="course-img">
+                                                    <a href="#"><img src="assets/img/letest_post1.jpg" alt="letest_course1"></a>
+                                                </div>
+                                                <div class="course-txt">
+                                                    <h6><a href="#">Nullam id varius nunc id varius nunc</a></h6>
+                                                    <span class="text-success small">Free</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-footer">
+                                                <div class="course-img">
+                                                    <a href="#"><img src="assets/img/letest_course2.jpg" alt="letest_course2"></a>
+                                                </div>
+                                                <div class="course-txt">
+                                                    <h6><a href="#">Nullam id varius nunc id varius nunc</a></h6>
+                                                    <span class="text-info small">$49</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-footer">
+                                                <div class="course-img">
+                                                    <a href="#"><img src="assets/img/letest_course3.jpg" alt="letest_course3"></a>
+                                                </div>
+                                                <div class="course-txt">
+                                                    <h6><a href="#">Nullam id varius nunc id varius nunc</a></h6>
+                                                    <span class="text-success small">Free</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </form>
-                            <div class="widget widget-recent-course">
-                                <h5 class="widget-title">Latest Course</h5>
-                                <ul class="recent-post border-bottom-dash list-none">
-                                    <li>
-                                        <div class="post-footer">
-                                            <div class="post-img">
-                                                <a href="#">
-                                                    <img src="assets/img/letest_course1.jpg" alt="letest_course1">
-                                                </a>
-                                            </div>
-                                            <div class="post-content">
-                                                <h6><a href="#">Nullam id varius nunc id varius nunc</a></h6>
-                                                <span class="text-success small">Free</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="post-footer">
-                                            <div class="post-img">
-                                                <a href="#"><img src="assets/img/letest_course2.jpg" alt="letest_course2"></a>
-                                            </div>
-                                            <div class="post-content">
-                                                <h6><a href="#">Nullam id varius nunc id varius nunc</a></h6>
-                                                <span class="text-info small">$49</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="post-footer">
-                                            <div class="post-img">
-                                                <a href="#"><img src="assets/img/letest_course3.jpg" alt="letest_course3"></a>
-                                            </div>
-                                            <div class="post-content">
-                                                <h6><a href="#">Nullam id varius nunc id varius nunc</a></h6>
-                                                <span class="text-success small">Free</span>
-                                            </div>
-                                        </div>
-                                    </li>
+
+                            </div>
+                            <div class="course-category" data-aos="fade-left">
+                                <h5>
+                                    Course Categories
+                                </h5>
+                                <ul class="mt-3">
+                                    <li><a href="#"><span class="cat-name">Development</span><span class="cat-num">(9)</span></a></li>
+                                    <li><a href="#"><span class="cat-name">Business</span><span class="cat-num">(6)</span></a></li>
+                                    <li><a href="#"><span class="cat-name ">Academics</span><span class="cat-num">(4)</span></a></li>
+                                    <li><a href="#"><span class="cat-name">Health Fitness</span><span class="cat-num">(7)</span></a></li>
+                                    <li><a href="#"><span class="cat-name">Photography</span><span class="cat-num">(12)</span></a></li>
                                 </ul>
                             </div>
-                            <div class="widget widget-categories">
-                                <h5 class="widget-title">Course Categories</h5>
-                                <ul>
-                                    <li><a href="#"><span class="categories-name">Development</span><span class="categories-num">(9)</span></a></li>
-                                    <li><a href="#"><span class="categories-name">Business</span><span class="categories-num">(6)</span></a></li>
-                                    <li><a href="#"><span class="categories-name">Academics</span><span class="categories-num">(4)</span></a></li>
-                                    <li><a href="#"><span class="categories-name">Health Fitness</span><span class="categories-num">(7)</span></a></li>
-                                    <li><a href="#"><span class="categories-name">Photography</span><span class="categories-num">(12)</span></a></li>
-                                </ul>
+                            <div class="recent-post" data-aos="fade-left">
+                                <h5>
+                                    Recent Post
+                                </h5>
+                                <div class="post-content">
+                                    <ul>
+                                        <li>
+                                            <div class="post-footer">
+                                                <div class="post-img">
+                                                    <a href="#"><img src="assets/img/letest_post1.jpg" alt="letest_course1"></a>
+                                                </div>
+                                                <div class="post-txt">
+                                                    <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                                    <span class="text-secondary small">April 14, 2018</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-footer">
+                                                <div class="post-img">
+                                                    <a href="#"><img src="assets/img/letest_course2.jpg" alt="letest_course2"></a>
+                                                </div>
+                                                <div class="post-txt">
+                                                    <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                                    <span class="text-secondary small">April 14, 2018</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-footer">
+                                                <div class="post-img">
+                                                    <a href="#"><img src="assets/img/letest_course3.jpg" alt="letest_course3"></a>
+                                                </div>
+                                                <div class="post-txt">
+                                                    <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                                    <span class="text-secondary small">April 14, 2018</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
-                            <div class="widget widget-recent-post">
-                                <h5 class="widget-title">Recent Post</h5>
-                                <ul class="recent-post border-bottom-dash list-none">
-                                    <li>
-                                        <div class="post-footer">
-                                            <div class="post-img">
-                                                <a href="#">
-                                                    <img src="assets/img/letest_post1.jpg" alt="letest_post1">
-                                                </a>
-                                            </div>
-                                            <div class="post-content">
-                                                <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                                <span class="post-date">April 14, 2018</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="post-footer">
-                                            <div class="post-img">
-                                                <a href="#">
-                                                    <img src="assets/img/letest_post2.jpg" alt="letest_post2">
-                                                </a>
-                                            </div>
-                                            <div class="post-content">
-                                                <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                                <span class="post-date">April 14, 2018</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="post-footer">
-                                            <div class="post-img">
-                                                <a href="#">
-                                                    <img src="assets/img/letest_post3.jpg" alt="letest_post3">
-                                                </a>
-                                            </div>
-                                            <div class="post-content">
-                                                <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                                <span class="post-date">April 14, 2018</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="widget widget-tags">
-                                <h5 class="widget-title">Tags</h5>
-                                <div class="tags">
+                            <div class="tags" data-aos="fade-left">
+                                <h5>
+                                    Tags
+                                </h5>
+                                <div class="tags-content">
                                     <a href="#">General</a>
                                     <a href="#">Design</a>
                                     <a href="#">jQuery</a>
@@ -738,13 +775,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            </div>
-        </section>
-        </div>
-        </div>
-        </div>
         </section>
 
         <!-- TRAINING -->
@@ -923,7 +954,14 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

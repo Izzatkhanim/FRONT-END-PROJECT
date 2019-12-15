@@ -3,264 +3,229 @@ main {
     .active {
         background-color: white !important;
     }
-    #course-detail {
-        margin-bottom: 100px;
-        margin-top: 100px;
-        .detail-box {
-            .detail-zad {
-                background-color: #fff3cd;
-                overflow: hidden;
-                .detail-img {
-                    position: relative;
-                    a {
-                        text-decoration: none;
+    #detail {
+        padding: 100px;
+        .course {
+            .course-img {
+                position: relative;
+                a {
+                    img {
+                        max-width: 100%;
+                        vertical-align: middle;
+                        border-style: none;
                     }
                 }
-                .price-detail {
-                    color: #155724;
-                    background-color: #d4edda;
-                    border-color: #c3e6cb;
-                    bottom: 30px;
-                    left: 25px;
+            }
+            .price {
+                .free {
                     position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    border: 1px solid #c3e6cb;
+                    color: $dark-success-color;
+                    background-color: $light-succsess-color;
                     padding: 5px 15px;
-                    border-radius: 5px;
-                    .price {
-                        font-weight: 300;
-                        span {
-                            font-weight: 600;
-                        }
-                    }
+                    margin: 0px;
+                    border-radius: 0.25rem;
                 }
-                .enroll-btn {
-                    right: 25px;
+            }
+            .enroll {
+                a {
                     position: absolute;
-                    bottom: 30px;
-                    a {
-                        font-weight: 300;
-                        font-size: 14px;
-                        text-decoration: none;
+                    bottom: 20px;
+                    right: 20px;
+                }
+            }
+            .course-detail {
+                background-color: #fff3cd;
+                padding: 20px;
+                margin-bottom: 40px;
+                .detail-title {
+                    border-bottom: 1px solid #dad1b9;
+                    margin-bottom: 15px;
+                    h2 {
+                        font-size: 24px;
+                        margin-top: 0;
                     }
                 }
                 .detail-content {
-                    position: relative;
-                    margin: 20px;
-                    h2 {
-                        font-size: 24px;
-                        font-weight: 600;
-                    }
-                    .head-line {
-                        background-color: #dad1b9;
-                        height: 1px;
-                        width: 790px;
-                        position: absolute;
-                        top: 43px;
-                        right: -1px;
-                    }
-                }
-                .detail-foot {
                     ul {
-                        margin-top: 30px;
                         list-style-type: none;
                         display: flex;
+                        padding: 0;
+                        margin: 0;
                         li {
-                            .line {
-                                background-color: #dad1b9;
-                                box-sizing: border-box;
-                                height: 50px;
-                                width: 1px;
-                                margin-left: 15px;
-                                margin-right: 15px;
-                            }
-                            display: flex;
-                            .instructor {
+                            float: left;
+                            padding-right: 15px;
+                            margin-right: 15px;
+                            border-right: 1px solid #dad1b9;
+                            .content {
                                 img {
-                                    margin-left: 20px;
                                     border-radius: 5px;
                                     float: left;
                                     margin-right: 10px;
                                     max-width: 50px;
                                     width: 100%;
                                 }
-                            }
-                            .instructor-info {
-                                span {
-                                    display: flex;
-                                    font-weight: 600;
-                                }
-                                a {
-                                    font-family: "Roboto", sans-serif;
-                                    color: black;
-                                    text-decoration: none;
-                                    font-weight: 300;
-                                    &:hover {
-                                        transition: all 0.5s;
-                                        color: $orange-color;
+                                .info {
+                                    overflow: hidden;
+                                    span {
+                                        display: block !important;
+                                        font-weight: bold;
+                                        color: #333;
+                                        margin: 0;
+                                    }
+                                    a {
+                                        color: #292b2c;
+                                        text-decoration: none;
+                                        transition: (all 0.5s);
+                                        &:hover {
+                                            color: $orange-color;
+                                        }
+                                    }
+                                    ul {
+                                        list-style-type: none;
+                                        display: flex;
+                                        padding: 0;
+                                        margin: 0;
+                                        li {
+                                            border-right: 0 solid #dad1b9;
+                                            padding: 0;
+                                            margin: 2px;
+                                            i {
+                                                color: $orange-color;
+                                                font-size: 12px;
+                                            }
+                                        }
                                     }
                                 }
                             }
-                            .course-cat {
-                                span {
-                                    display: flex;
-                                    font-weight: 600;
-                                }
-                                a {
-                                    color: black;
-                                    text-decoration: none;
-                                    font-weight: 300;
-                                    font-weight: 300;
-                                    &:hover {
-                                        transition: all 0.5s;
-                                        color: $orange-color;
-                                    }
-                                }
-                            }
-                            .course-students {
-                                span {
-                                    font-weight: 600;
-                                }
-                                p {
-                                    font-weight: 300;
-                                }
-                            }
-                            .course-review {
-                                span {
-                                    font-weight: 600;
-                                }
-                                .rating-stars {
-                                    i {
-                                        font-size: 12px;
-                                        color: $orange-color;
-                                    }
-                                }
+                            &:last-child {
+                                border-right: 0 solid #dad1b9;
                             }
                         }
                     }
                 }
             }
-            .course_tabs {
-                margin-top: 50px;
-                .nav-tabs {
-                    border-bottom: 1px solid #dee2e6;
-                }
-                .nav {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding-left: 0;
-                    margin-bottom: 0;
-                    list-style: none;
+            .course-info-tabs {
+                padding: 20px;
+                ul {
                     li {
                         margin-right: 20px;
-                        margin-bottom: -1px;
-                        .nav-link {
-                            border: none;
-                            background-color: white;
-                            text-decoration: none;
-                            color: $header-color;
-                        }
-                        .nav-link.active {
-                            color: #FFBC09 !important;
+                        a {
                             background-color: white !important;
-                            border-bottom: 3px solid #FFBC09;
+                            border: none;
+                            color: $header-color !important;
+                            font-family: "Roboto", sans-serif;
+                        }
+                        .active {
+                            border-bottom: 3px solid $orange-color;
+                            color: $orange-color;
                         }
                     }
                 }
                 .tab-content {
                     margin-top: 20px;
-                    .tab-content>.active {
-                        display: block;
-                    }
-                    .tab-content>.tab-pane {
-                        display: none;
-                    }
-                    .fade {
-                        transition: opacity .15s linear;
-                    }
-                    .fade:not(.show) {
-                        opacity: 0;
-                    }
-                    .tab-pane {
-                        .tab_box {
-                            padding: 15px;
+                    .content-text {
+                        background-color: white !important;
+                        padding: 15px;
+                        border: 1px solid #dee2e6 !important;
+                        border-radius: 5px;
+                        p {
+                            text-align: left;
+                            color: $secondary-color;
+                            font-family: "Roboto", sans-serif;
+                            &:last-child {
+                                margin: 0;
+                            }
                         }
-                        .radius_all_5 {
-                            border-radius: 5px;
+                    }
+                    .accordion .card-header a.collapsed::after {
+                        content: "\f106";
+                    }
+                    .card-header {
+                        padding: 0 !important;
+                        background-color: transparent !important;
+                        .item_time {
+                            background-color: $orange-color;
+                            color: #fff;
+                            padding: 4px 8px;
+                            border-radius: 3px;
+                            position: absolute;
+                            right: 20px;
+                            font-size: 14px;
+                            top: 20px;
+                            &::before {
+                                content: "\f017";
+                                font-family: "Font Awesome 5 Pro";
+                                font-weight: 400;
+                                margin-right: 5px;
+                            }
                         }
-                        .border {
-                            border: 1px solid #dee2e6!important;
+                        h6 {
+                            a {
+                                transition: (all 0.3s);
+                                color: $header-color;
+                                font-family: "Rubik", sans-serif;
+                                display: block;
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                line-height: normal;
+                                padding: 20px 120px 20px 50px;
+                                font-weight: bold;
+                                &:hover {
+                                    text-decoration: none;
+                                    color: $orange-color;
+                                }
+                                &::after {
+                                    content: "\f107";
+                                    font-family: "Font Awesome 5 Pro";
+                                    font-size: 14px;
+                                    font-weight: 900;
+                                    position: absolute;
+                                    left: 20px;
+                                    top: 22px;
+                                }
+                            }
+                        }
+                    }
+                    .card-body {
+                        p {
+                            color: $secondary-color;
+                            font-family: "Roboto", sans-serif;
+                        }
+                    }
+                    .course_author {
+                        background-color: #fff;
+                        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                        border-radius: 10px;
+                        padding: 30px 30px 30px 50px;
+                        margin: 5px 5px 5px 50px;
+                        position: relative;
+                        z-index: 1;
+                        .author_img {
+                            margin-left: -100px;
+                            float: left;
+                            margin-right: 20px;
+                            img {
+                                border-radius: 5px;
+                            }
+                        }
+                        .author_meta {
+                            h6 {
+                                color: $header-color;
+                                font-family: "Rubik", sans-serif;
+                                font-weight: bold;
+                                margin: 0;
+                            }
+                            span {
+                                font-style: italic;
+                                color: $orange-color;
+                            }
                             p {
-                                color: $secondary-color !important;
-                                text-align: left;
-                                font-weight: 300;
-                                margin-bottom: 0;
-                                line-height: 25px;
-                            }
-                        }
-                        #accordion {
-                            .accordion .card-header {
-                                padding: 0;
-                                background-color: transparent;
-                                border: 0;
-                                .card-header:first-child {
-                                    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-                                }
-                            }
-                            .card {
-                                position: relative;
-                                display: flex;
-                                flex-direction: column;
-                                min-width: 0;
-                                word-wrap: break-word;
-                                background-color: #fff;
-                                background-clip: border-box;
-                                border: 1px solid rgba(0, 0, 0, .125);
-                                border-radius: .25rem;
-                            }
-                            .accordion>.card {
-                                overflow: hidden;
-                            }
-                            .accordion>.card:first-of-type {
-                                border-bottom: 0;
-                                border-bottom-right-radius: 0;
-                                border-bottom-left-radius: 0;
-                            }
-                        }
-                        .course_author {
-                            background-color: #fff;
-                            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
-                            border-radius: 10px;
-                            padding: 30px 30px 30px 50px;
-                            margin: 5px 5px 5px 50px;
-                            position: relative;
-                            z-index: 1;
-                            .author_img {
-                                margin-left: -100px;
-                                float: left;
-                                margin-right: 20px;
-                                img {
-                                    max-width: 100%;
-                                }
-                            }
-                            .author_meta {
-                                overflow: hidden;
-                                .author_intro {
-                                    margin-bottom: 6px;
-                                    h6 {
-                                        color: #292b2c;
-                                        font-family: 'Rubik', sans-serif;
-                                    }
-                                    span {
-                                        font-style: italic;
-                                    }
-                                    .text_default {
-                                        color: #FFBC09 !important;
-                                    }
-                                }
-                                .author_desc {
-                                    p {
-                                        color: $secondary-color;
-                                    }
-                                }
+                                color: $secondary-color;
+                                font-family: "Roboto", sans-serif;
+                                font-size: 15px;
                             }
                         }
                     }
@@ -274,398 +239,97 @@ main {
                             text-align: center;
                             background-color: #f5f5f5;
                             padding: 20px;
-                            p {
-                                color: $secondary-color;
-                            }
                             .rating_stars {
                                 i {
                                     color: #ffc600;
-                                    font-size: 18px;
+                                    font-size: 13px;
+                                    line-height: normal;
+                                }
+                            }
+                            p {
+                                color: $secondary-color;
+                                font-family: "Roboto", sans-serif;
+                                .review_number {
+                                    display: block;
+                                    font-size: 70px;
+                                    color: #333;
+                                    font-weight: 500;
                                     line-height: normal;
                                 }
                             }
                         }
-                        .rating_box {
-                            width: 60%;
-                            padding: 20px;
-                            .course_rate {
-                                margin-bottom: 10px;
-                                .review_bar {
-                                    margin-bottom: 10px;
-                                    .rating {
-                                        width: 90%;
-                                    }
-                                }
-                            }
-                        }
-                        .heading_s1 {
-                            h5 {
-                                margin-bottom: 1rem;
-                                color: #292b2c;
-                                font-family: 'Rubik', sans-serif;
-                            }
-                        }
-                        .list-none {
-                            li {
-                                list-style: none;
-                            }
-                            .comment_info {
-                                padding-top: 15px;
-                                margin-top: 15px;
-                                border-top: 1px solid #ddd;
-                                .d-flex {
-                                    display: flex !important;
-                                    .user_img {
-                                        img {
-                                            max-width: 100px;
-                                            margin-right: 15px;
-                                        }
-                                    }
-                                    .comment_content {
-                                        .meta_data {
-                                            margin-bottom: 6px;
-                                            h6 {
-                                                color: #292b2c;
-                                                font-family: 'Rubik', sans-serif;
-                                                a {
-                                                    color: #292b2c;
-                                                    text-decoration: none;
-                                                    transition: all 0.5s ease;
-                                                }
-                                            }
-                                            .comment-time {
-                                                font-size: 14px;
-                                                text-transform: capitalize;
-                                                color: #333;
-                                            }
-                                        }
-                                        .ml-auto {
-                                            margin-left: auto!important;
-                                            .rating_stars {
-                                                i {
-                                                    color: #ffc600;
-                                                    font-size: 18px;
-                                                    line-height: normal;
-                                                }
-                                            }
-                                        }
-                                        p {
-                                            color: $secondary-color;
-                                        }
-                                        .list_none li {
-                                            list-style: none;
-                                        }
-                                        .comment_info {
-                                            padding-top: 15px;
-                                            margin-top: 15px;
-                                            border-top: 1px solid #ddd;
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
-                    .border {
-                        .review_form {
-                            h5 {
-                                color: #292b2c;
-                                font-family: 'Rubik', sans-serif;
-                                font-size: 1.25rem;
+                    .rating_box {
+                        width: 60%;
+                        padding: 20px;
+                        .course_rate {
+                            margin-bottom: 10px;
+                            span {
+                                color: $secondary-color;
                             }
-                            .form-group {
-                                margin-bottom: 1rem;
+                            .review_bar {
+                                width: calc(100% - 120px);
+                                margin: 0 10px;
+                                height: 15px;
+                                background-color: #ddd;
+                                display: inline-block;
                                 .rating {
-                                    span {
-                                        cursor: pointer;
-                                        display: inline-block;
-                                    }
-                                }
-                                textarea.form-control {
-                                    height: auto;
-                                }
-                                .form-control {
-                                    height: 47px;
-                                    padding: 10px 20px;
-                                    color: #666666;
-                                    box-shadow: none;
+                                    background-color: $orange-color !important;
+                                    height: 15px;
                                 }
                             }
                         }
                     }
-                }
-            }
-        }
-        .heading {
-            margin-top: 50px;
-            h6 {
-                font-size: 24px;
-                font-weight: 600;
-                text-align: left;
-                margin-bottom: 0;
-            }
-        }
-        .card {
-            width: 100%;
-            background-color: #fff;
-            margin-top: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            .card-img {
-                border-bottom-right-radius: 0;
-                border-bottom-left-radius: 0;
-                overflow: hidden;
-                .card-img-top {
-                    border-top-right-radius: 10px;
-                    border-top-left-radius: 10px;
-                    transition: all .2s ease-in-out;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
-            .card-content {
-                .content-title {
-                    margin-top: 10px;
-                    text-align: center;
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                    font-family: 'Rubik', sans-serif;
-                    font-weight: 600;
-                    a {
-                        text-decoration: none;
-                        color: $header-color;
-                        &:hover {
-                            color: $darken-orange-color;
-                            transition: all 0.3s;
+                    .heading_s1 {
+                        h5 {
+                            margin-bottom: 16px;
+                            color: $header-color;
+                            font-family: "Rubik", sans-serif;
+                            font-weight: bold;
                         }
                     }
-                }
-                p {
-                    margin-left: 17px;
-                    justify-content: left;
-                    font-size: 16px;
-                    font-weight: 300;
-                    color: $secondary-color;
-                }
-            }
-        }
-        .courses-info {
-            display: inline-block;
-            width: 100%;
-            vertical-align: middle;
-            .rating-stars {
-                float: left;
-                margin-left: 17px;
-                i {
-                    color: #ffc600;
-                    font-size: 12px;
-                    line-height: normal;
-                }
-            }
-        }
-        .content-likes {
-            width: auto;
-            margin-left: 140px;
-            padding: 0;
-            display: inline-block;
-            vertical-align: middle;
-            li {
-                float: left;
-                padding-right: 15px;
-                font-size: 15px;
-                a {
-                    font-weight: 300;
-                    text-decoration: none;
-                    color: #292b2c;
-                    &:hover {
-                        color: $darken-orange-color;
-                        transition: all 0.3s;
+                    .btn {
+                        transition: (all 0.3s);
                     }
-                }
-            }
-        }
-        .content-footer {
-            border-top: 1px solid #ddd;
-            align-items: center;
-            justify-content: space-between;
-            display: flex;
-            padding: 15px;
-            width: 100%;
-            .teacher {
-                a {
-                    text-decoration: none;
-                    img {
-                        border-radius: 100%;
-                        max-width: 40px;
-                        margin-right: 10px;
-                    }
-                    span {
-                        color: #292b2c;
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 16px;
-                        &:hover {
-                            color: $darken-orange-color;
-                            transition: all 0.3s;
+                    .btn:hover {
+                        &::before {
+                            left: 200px;
                         }
                     }
-                }
-            }
-            .price {
-                float: right;
-                span {
-                    margin: 0;
-                    padding: 5px 15px;
-                    display: block;
-                    color: $dark-success-color;
-                    background-color: $light-succsess-color;
-                    border-color: #c3e6cb;
-                }
-                .paid {
-                    border: 1px solid #bee5eb;
-                    color: $darken-sea-color;
-                    background-color: $ligter-sea-color;
-                }
-            }
-        }
-        .all-courses {
-            justify-content: center;
-            text-align: center;
-            margin-top: 50px;
-            a {
-                span {
-                    font-size: 20px;
-                }
-            }
-        }
-        .sidebar {
-            .form-inline {
-                .form-group {
-                    input {
-                        margin-left: 0 !important;
-                        display: inline-block;
-                        width: 250px;
-                        vertical-align: middle;
-                        height: 47px;
-                        position: relative;
-                    }
-                    i {
-                        cursor: pointer;
-                        position: absolute;
-                        right: 35px;
-                        font-size: 18px;
-                        &:hover {
-                            transition: all 0.5s;
-                            color: $orange-color;
-                        }
-                    }
-                }
-            }
-            .widget {
-                margin-top: 30px;
-                .widget-title {
-                    position: relative;
-                    padding-bottom: 15px;
-                    &::before {
-                        background-color: #ffbc09;
-                        bottom: 0;
-                        content: "";
-                        height: 3px;
-                        left: 0;
-                        position: absolute;
-                        width: 80px;
-                        z-index: 1;
-                    }
-                    &::after {
-                        background-color: #ddd;
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        height: 1px;
-                        bottom: 0;
-                        width: 100%;
-                        content: "";
-                        z-index: 0;
-                    }
-                }
-                ul {
-                    margin-top: 20px;
-                    padding: 0;
-                    list-style: none;
-                    li {
-                        display: inline-block;
-                        width: 100%;
-                        margin-bottom: 12px;
-                        list-style: none;
-                        .post-footer {
-                            .post-img {
-                                float: left;
-                                margin-right: 10px;
-                                max-width: 60px;
+                    .comment_list {
+                        list-style-type: none;
+                        .user_img {
+                            img {
+                                border-radius: 5px;
+                                max-width: 100px;
+                                margin-right: 15px;
                             }
-                            .post-content {
-                                overflow: hidden;
-                                h6 {
-                                    font-size: 14px;
-                                    line-height: normal;
-                                    margin-bottom: 5px;
-                                    font-weight: normal;
-                                    a {
-                                        color: #292b2c;
+                        }
+                        .comment_info {
+                            padding-top: 15px;
+                            margin-top: 15px;
+                            border-top: 1px solid #ddd;
+                        }
+                        .comment_content {
+                            p {
+                                color: #888888;
+                            }
+                            .meta_data {
+                                margin-bottom: 6px;
+                                a {
+                                    transition: (all 0.3s);
+                                    color: $header-color;
+                                    font-family: "Rubik", sans-serif;
+                                    font-weight: bold;
+                                    &:hover {
                                         text-decoration: none;
-                                        transition: all 0.5s ease;
+                                        color: $orange-color;
                                     }
                                 }
-                                .text-success {
-                                    color: #28a745 !important;
-                                }
-                                .small {
-                                    font-size: 80%;
-                                    font-weight: 400;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .widget-categories {
-                ul {
-                    list-style: none;
-                    li {
-                        position: relative;
-                        width: 100%;
-                        margin-bottom: 12px;
-                        list-style: none;
-                        margin-left: 14px;
-                        a {
-                            color: #292b2c !important;
-                            text-decoration: none !important;
-                            transition: all 0.5s ease;
-                            &::before {
-                                content: "\f054";
-                                position: absolute;
-                                left: -14px;
-                                top: 6px;
-                                font-family: "Font Awesome 5 Pro";
-                                line-height: normal;
-                                font-weight: 900;
-                                margin-right: 10px;
-                                font-size: 12px;
-                            }
-                        }
-                        .categories-num {
-                            float: right;
-                        }
-                    }
-                }
-            }
-            .widget-recent-post {
-                .recent-post {
-                    li {
-                        .post-footer {
-                            .post-content {
-                                span {
-                                    font-size: 80%;
-                                    color: $secondary-color;
+                                .comment-time {
+                                    font-size: 14px;
+                                    text-transform: capitalize;
+                                    color: #333;
                                     font-family: "Roboto", sans-serif;
                                 }
                             }
@@ -673,12 +337,354 @@ main {
                     }
                 }
             }
-            .widget-tags {
-                margin-top: 0;
-                .tags {
-                    margin-top: 20px;
+            .card {
+                .card-img {
+                    overflow: hidden;
+                    a {
+                        display: block;
+                        img {
+                            width: 100%;
+                            transition: (all 0.3s);
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+                .card-body {
+                    padding: 0px;
+                    .card-txt {
+                        padding: 15px;
+                        .card-inform {
+                            p {
+                                margin-bottom: 10px;
+                                text-align: left;
+                            }
+                        }
+                        .course-inform {
+                            justify-content: space-between;
+                            .stars {
+                                color: $orange-color;
+                                font-size: 12px;
+                                float: left;
+                            }
+                            .view-like {
+                                list-style: none;
+                                display: flex;
+                                float: right;
+                                font-size: 12px;
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        color: black;
+                                        transition: (all 0.5s);
+                                        &:hover {
+                                            color: $orange-color;
+                                        }
+                                    }
+                                    &:first-child {
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .card-footer {
+                    background-color: white;
+                    justify-content: space-between;
+                    display: flex;
+                    padding: 15px;
+                    width: 100%;
+                    .teacher {
+                        a {
+                            color: $header-color;
+                            text-decoration: none;
+                            cursor: pointer;
+                            img {
+                                border-radius: 100%;
+                                max-width: 40px;
+                                margin-right: 10px;
+                            }
+                            span {
+                                cursor: pointer;
+                                transition: (all 0.5s);
+                                &:hover {
+                                    color: $orange-color;
+                                }
+                            }
+                        }
+                    }
+                    .price {
+                        float: right;
+                        margin-top: 7px;
+                        .free {
+                            position: relative;
+                            border: 1px solid #c3e6cb;
+                            color: $dark-success-color;
+                            background-color: $light-succsess-color;
+                            padding: 5px 15px;
+                            margin: 0px;
+                            border-radius: 0.25rem;
+                            top: 0;
+                            bottom: 0 !important;
+                            left: 0 !important;
+                            right: 0 !important;
+                        }
+                        .paid {
+                            position: relative;
+                            border: 1px solid #bee5eb;
+                            color: $darken-sea-color;
+                            background-color: $ligter-sea-color;
+                            padding: 5px 15px;
+                            margin: 0px;
+                            border-radius: 0.25rem;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar {
+            .search {
+                .search_form {
+                    position: relative;
                     a {
                         text-decoration: none;
+                        color: $header-color;
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                    }
+                }
+            }
+            .latest-course {
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                h5 {
+                    padding: 10px;
+                    &:before {
+                        bottom: 0;
+                        content: "";
+                        height: 4px;
+                        left: 23px;
+                        position: absolute;
+                        width: 80px;
+                        z-index: 1;
+                        background-color: #ffbc09;
+                        top: 88px;
+                    }
+                    &:after {
+                        background-color: #ddd;
+                        position: absolute;
+                        left: 28px;
+                        right: 0;
+                        height: 1px;
+                        bottom: 0;
+                        width: 100%;
+                        content: "";
+                        z-index: 0;
+                        top: 91px;
+                    }
+                }
+                .course-content {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 30px;
+                        margin-left: 10px;
+                        li {
+                            display: inline-block;
+                            width: 100%;
+                            margin-bottom: 12px;
+                            .course-footer {
+                                .course-img {
+                                    float: left;
+                                    margin-right: 10px;
+                                    max-width: 60px;
+                                }
+                            }
+                            .course-txt {
+                                position: relative;
+                                a {
+                                    transition: (all 0.3s);
+                                    color: #292b2c;
+                                    font-size: 12px;
+                                    &:hover {
+                                        text-decoration: none;
+                                        color: $orange-color;
+                                    }
+                                }
+                                span {
+                                    position: absolute;
+                                    top: 42px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .course-category {
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                h5 {
+                    padding: 10px;
+                    position: relative;
+                    &:before {
+                        bottom: 0;
+                        content: "";
+                        height: 4px;
+                        left: 11px;
+                        position: absolute;
+                        width: 80px;
+                        z-index: 1;
+                        background-color: #ffbc09;
+                        top: 40px;
+                    }
+                    &:after {
+                        background-color: #ddd;
+                        position: absolute;
+                        left: 11px;
+                        right: 0;
+                        height: 1px;
+                        bottom: 0;
+                        width: 100%;
+                        content: "";
+                        z-index: 0;
+                        top: 43px;
+                    }
+                }
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        padding-bottom: 15px;
+                        line-height: normal;
+                        a {
+                            transition: (all 0.6s);
+                            color: #292b2c;
+                            font-size: 15px;
+                            font-family: $secondary-color;
+                            &::before {
+                                content: "\f105";
+                                font-family: "Font Awesome 5 Pro";
+                                font-weight: 900;
+                                margin-right: 10px;
+                                font-size: 12px;
+                            }
+                            &:hover {
+                                text-decoration: none;
+                                color: $orange-color;
+                            }
+                            .cat-num {
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+            .recent-post {
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                h5 {
+                    padding: 10px;
+                    position: relative;
+                    &:before {
+                        bottom: 0;
+                        content: "";
+                        height: 4px;
+                        left: 11px;
+                        position: absolute;
+                        width: 80px;
+                        z-index: 1;
+                        background-color: #ffbc09;
+                        top: 40px;
+                    }
+                    &:after {
+                        background-color: #ddd;
+                        position: absolute;
+                        left: 11px;
+                        right: 0;
+                        height: 1px;
+                        bottom: 0;
+                        width: 100%;
+                        content: "";
+                        z-index: 0;
+                        top: 43px;
+                    }
+                }
+                .post-content {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 30px;
+                        margin-left: 10px;
+                        li {
+                            display: inline-block;
+                            width: 100%;
+                            margin-bottom: 12px;
+                            .post-footer {
+                                .post-img {
+                                    float: left;
+                                    margin-right: 10px;
+                                    max-width: 60px;
+                                }
+                            }
+                            .post-txt {
+                                position: relative;
+                                a {
+                                    transition: (all 0.3s);
+                                    color: #292b2c;
+                                    font-size: 12px;
+                                    &:hover {
+                                        text-decoration: none;
+                                        color: $orange-color;
+                                    }
+                                }
+                                span {
+                                    position: absolute;
+                                    top: 42px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tags {
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                h5 {
+                    padding: 10px;
+                    position: relative;
+                    &:before {
+                        bottom: 0;
+                        content: "";
+                        height: 4px;
+                        left: 11px;
+                        position: absolute;
+                        width: 80px;
+                        z-index: 1;
+                        background-color: #ffbc09;
+                        top: 40px;
+                    }
+                    &:after {
+                        background-color: #ddd;
+                        position: absolute;
+                        left: 11px;
+                        right: 0;
+                        height: 1px;
+                        bottom: 0;
+                        width: 100%;
+                        content: "";
+                        z-index: 0;
+                        top: 43px;
+                    }
+                }
+                .tags-content {
+                    a {
+                        transition: (all 0.5s);
                         border: 1px solid #ddd;
                         font-size: 14px;
                         padding: 5px 15px;
@@ -687,10 +693,8 @@ main {
                         margin-bottom: 5px;
                         color: #292b2c;
                         &:hover {
-                            transition: all 0.5s;
-                            background-color: $orange-color;
-                            color: white;
-                            border-color: $orange-color;
+                            text-decoration: none;
+                            color: $orange-color;
                         }
                     }
                 }
