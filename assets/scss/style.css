@@ -1064,6 +1064,16 @@ main #our-gallery .row .heading {
   text-align: center;
 }
 
+main #our-gallery .row .heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+main #our-gallery .row .heading p {
+  color: #888888;
+  font-weight: 300;
+}
+
 main #our-gallery .buttons ul {
   list-style: none;
   display: -webkit-box;

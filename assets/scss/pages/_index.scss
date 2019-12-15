@@ -937,6 +937,14 @@ main {
             justify-content: center;
             .heading {
                 text-align: center;
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+                p {
+                    color: $secondary-color;
+                    font-weight: 300;
+                }
             }
         }
         .buttons {
