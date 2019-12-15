@@ -192,7 +192,7 @@ header {
                 z-index: 99;
                 a {
                     margin-top: 4px;
-                    padding: 0 9px;
+                    padding: 10px 9px;
                     min-width: 12em;
                     color: #333333;
                     font-size: 14px;
@@ -218,7 +218,7 @@ header {
                 margin-left: -140px;
                 z-index: 1;
                 padding: 8px;
-                width: 200px;
+                width: 300px;
                 .form-control {
                     display: block;
                     width: 100%;
@@ -257,16 +257,72 @@ header {
 main {
     // SLIDER
     #slider {
-        overflow: hidden;
-        #carouselExampleControls {
-            height: 670px;
+        .carousel {
             .carousel-inner {
                 .carousel-item {
-                    img {
-                        margin-top: -100px;
+                    position: relative;
+                    .last-heading {
+                        top: 240px !important;
+                        position: absolute;
+                        left: 124px !important;
+                    }
+                    .cor-item {
+                        top: 250px;
+                        position: absolute;
+                        left: 186px;
+                        h1 {
+                            color: white;
+                            font-size: 50px;
+                            margin-bottom: 20px;
+                            vertical-align: bottom;
+                            font-weight: 800!important;
+                        }
+                        p {
+                            color: white;
+                            font-weight: 300;
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                        }
+                        .btn {
+                            background-color: $orange-color;
+                            font-weight: 300;
+                            padding: 10px 15px;
+                            height: 45px;
+                            width: 140px;
+                            margin-right: 20px;
+                            opacity: 1;
+                            border-radius: 5px;
+                        }
+                        .btn-learn {
+                            background-color: transparent;
+                            color: white;
+                            text-decoration: none;
+                            border: 2px solid white;
+                            border-radius: 5px;
+                            padding: 9px 15px;
+                            height: 45px;
+                            width: 140px;
+                            opacity: 1;
+                        }
                     }
                 }
             }
+        }
+        a {
+            padding: 20px;
+            background-color: black;
+            opacity: .5;
+            transition: opacity .15s ease;
+            height: 60px;
+            width: 60px;
+            top: 300px;
+            border-radius: 50px;
+        }
+        .carousel-control-prev {
+            left: 30px;
+        }
+        .carousel-control-next {
+            right: 30px;
         }
     }
     // FEATURES
@@ -875,70 +931,104 @@ main {
         }
     }
     // GALLERY
-    #gallery {
-        margin-top: 100px;
-        .heading {
-            h2 {
-                font-size: 32px;
-                font-weight: 600;
+    #our-gallery {
+        padding: 100px;
+        .row {
+            justify-content: center;
+            .heading {
                 text-align: center;
-            }
-            p {
-                margin-top: 15px;
-                text-align: center;
-                color: $secondary-color;
             }
         }
         .buttons {
-            margin-top: 30px;
-            border-radius: 4px;
-            padding: 5px 25px;
-            li {
-                display: inline-block;
-                margin: 0 3px;
-            }
-            a {
-                color: black;
-                text-decoration: none;
-                background-color: #eee;
-                padding: 5px 25px;
-                display: block;
-                font-size: 16px;
-                border-radius: 4px;
-                &:hover {
-                    background-color: $orange-color;
-                    transition: all 0.5s;
-                    color: white !important;
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                margin: 30px auto;
+                li {
+                    margin: 0 10px;
+                    a {
+                        background-color: #eee;
+                        color: $header-color;
+                        padding: 8px 25px;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        &:hover {
+                            color: white;
+                            background-color: $orange-color;
+                            transition: all 0.5s;
+                        }
+                    }
                 }
             }
+        }
+        .active {
+            background-color: $orange-color !important;
+            color: white !important;
         }
         .row {
             padding: 0;
         }
         .gallery-item {
             width: 100%;
+        }
+        .item {
+            float: left;
+            margin: 10px 10px;
+            z-index: 1;
+            cursor: pointer;
+            border-radius: 10px;
             &:hover {
-                &:before {
-                    background-color: rgba(0, 0, 0, 0.6);
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    opacity: 0;
-                    visibility: hidden;
-                    top: 0;
-                    bottom: 0;
-                    transition: all 0.5s ease-in-out;
-                    z-index: 2;
+                a {
+                    transition: (all 0.5s);
+                    opacity: 1;
+                    z-index: 99;
+                    position: relative;
+                    top: -34;
+                    left: -58%;
                 }
             }
-            .item {
-                float: left;
-                margin: 10px 10px;
-                z-index: 1;
-                cursor: pointer;
-                img {
-                    border-radius: 10px;
+            &:before {
+                background-color: black;
+                content: "";
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                height: 100%;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s ease-in-out;
+                z-index: 99;
+                border-radius: 10px;
+            }
+            &:hover {
+                &:before {
+                    opacity: 0.5;
+                }
+            }
+            img {
+                border-radius: 10px;
+            }
+            a {
+                opacity: 0;
+            }
+            span {
+                color: $orange-color;
+                position: absolute;
+                left: 10px;
+                top: -20px;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                font-size: 20px;
+                padding: 10px;
+                border-radius: 50px;
+                h5 {
+                    position: absolute;
+                    top: 70px;
+                    left: -28px;
+                    color: white;
+                    width: 100px;
                 }
             }
         }
@@ -1142,6 +1232,7 @@ main {
                                 font-family: 'Rubik', sans-serif;
                                 font-size: 15px;
                                 &:hover {
+                                    transition: all 0.5s;
                                     color: $orange-color;
                                 }
                             }
@@ -1158,6 +1249,7 @@ main {
                             font-family: "Roboto", sans-serif;
                             font-size: 16px;
                             &:hover {
+                                transition: all 0.5s;
                                 color: $orange-color;
                             }
                         }
@@ -1315,10 +1407,12 @@ footer {
                 li {
                     padding-bottom: 10px;
                     a {
+                        transition: all 0.5s;
                         font-size: 14px;
                         color: white;
                         text-decoration: none;
                         &:hover {
+                            transition: all 0.5s;
                             color: $orange-color;
                             margin-left: 10px;
                         }
@@ -1363,6 +1457,7 @@ footer {
                                     color: white;
                                     transition: (all 0.5);
                                     &:hover {
+                                        transition: all 0.5s !important;
                                         color: $orange-color;
                                     }
                                 }
@@ -1435,6 +1530,7 @@ footer {
                         text-align: center;
                         transition: (all 0.5s);
                         &:hover {
+                            transition: all 0.5s !important;
                             color: $orange-color;
                         }
                         i {
@@ -1490,7 +1586,7 @@ footer {
     height: 40px;
     line-height: 38px;
     position: fixed;
-    right: 50px;
+    right: 40px;
     text-align: center;
     width: 40px;
     z-index: 99;

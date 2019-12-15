@@ -3,23 +3,6 @@
           box-sizing: border-box;
 }
 
-.loader {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.loader img {
-  width: 200px;
-}
-
-.page {
-  display: none;
-}
-
 header #alert-box .red-part {
   background-color: #f6475f;
 }
@@ -377,7 +360,7 @@ main #features {
 
 main #features .container .row .heading h2 {
   text-align: center;
-  margin-bottom: 20px !important;
+  margin-bottom: 10px;
   margin-top: 100px;
   color: #292b2c;
   font-family: 'Rubik', sans-serif;
@@ -387,13 +370,12 @@ main #features .container .row .heading h2 {
 }
 
 main #features .container .row .heading p {
-  font-weight: 300;
   text-align: center;
   color: #888888;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 16px !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   margin-top: 0;
-  margin-bottom: 17px !important;
+  margin-bottom: 1rem;
   line-height: 25px;
 }
 
@@ -484,7 +466,7 @@ main #features .container .row .card p {
 }
 
 main #categories {
-  margin-top: 70px;
+  margin-top: 100px;
   padding-bottom: 50px;
   background-color: white;
 }
@@ -1191,6 +1173,11 @@ main #our-gallery .item span h5 {
   width: 100px;
 }
 
+main .active {
+  background-color: #FFBC09 !important;
+  color: white !important;
+}
+
 main #teachers {
   margin-top: 100px;
   overflow: hidden;
@@ -1425,6 +1412,8 @@ main #our-blog .card .card-body .card-txt .card-inform h6 a {
 }
 
 main #our-blog .card .card-body .card-txt .card-inform h6 a:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color: #FFBC09;
 }
 
@@ -1444,6 +1433,8 @@ main #our-blog .card .card-body .card-txt .card-inform a {
 }
 
 main #our-blog .card .card-body .card-txt .card-inform a:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color: #FFBC09;
 }
 
@@ -1622,12 +1613,16 @@ footer #footer-top .useful-links ul li {
 }
 
 footer #footer-top .useful-links ul li a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   font-size: 14px;
   color: white;
   text-decoration: none;
 }
 
 footer #footer-top .useful-links ul li a:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color: #FFBC09;
   margin-left: 10px;
 }
@@ -1681,6 +1676,8 @@ footer #footer-top .recent-post ul li .posts .post-content h6 a {
 }
 
 footer #footer-top .recent-post ul li .posts .post-content h6 a:hover {
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
   color: #FFBC09;
 }
 
@@ -1755,6 +1752,8 @@ footer #footer-top .sub-news ul li a {
 }
 
 footer #footer-top .sub-news ul li a:hover {
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
   color: #FFBC09;
 }
 
@@ -1812,7 +1811,7 @@ footer #footer-bottom ul a:hover {
   height: 40px;
   line-height: 38px;
   position: fixed;
-  right: 50px;
+  right: 40px;
   text-align: center;
   width: 40px;
   z-index: 99;
