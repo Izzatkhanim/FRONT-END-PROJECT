@@ -3,6 +3,23 @@
           box-sizing: border-box;
 }
 
+.page {
+  display: none;
+}
+
+.loader {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loader img {
+  width: 200px;
+}
+
 header #alert-box .red-part {
   background-color: #f6475f;
 }

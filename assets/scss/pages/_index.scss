@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+.page {
+    display: none;
+}
+
+.loader {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        width: 200px;
+    }
+}
+
 //HEADER
 header {
     //ALERT BOX
